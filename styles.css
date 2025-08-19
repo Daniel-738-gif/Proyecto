@@ -1,3 +1,4 @@
+
 html {
 	font-size: 14px;
 }
@@ -29,3 +30,36 @@ h1, h2, h3, h4, h5, h6 {
 p {
 	color: whitesmoke;
 }
+=======
+html {
+	font-size: 14px;
+}
+
+head {
+	color: whitesmoke;
+	font-size: 20px;
+}
+
+body {
+	
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  background-color: #f8f9fa; /* Light neutral background */
+  color: #333;               /* Comfortable text color */
+	background: gray;
+	color: whitesmoke;
+	font-size: 30;
+	font-weight: bold;
+	margin: ;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+p {
+	color: whitesmoke;
+}
+
