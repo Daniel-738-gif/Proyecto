@@ -6,8 +6,8 @@ btn.addEventListener('click', () => {
 
   // Update button text/icon
   if (body.classList.contains('dark')) {
-    btn.textContent = '☀️ ';
+    btn.textContent = '☀️ Modo claro';
   } else {
-    btn.textContent = '🌙 ';
+    btn.textContent = '🌙 Modo oscuro';
   }
 });
