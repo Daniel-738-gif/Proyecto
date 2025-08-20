@@ -7,21 +7,41 @@ html {
 body {
 	font-family: sans-serif;
   text-align: center;
-  background-color: #f3f4f6;
-  color: #111;
   padding: 50px;
+  background-color: white;
+  color: black;
+  transition: background-color 0.3s, color 0.3s; 
+}
+body.dark {
+  background-color: #0f172a;
+  color: #e5e7eb;
 }
 
-button {
-  background-color: #2563eb;
+#themeToggle {
+  background: #2563eb;
   color: white;
-  padding: 10px 20px;
   border: none;
-  font-size: 1.2rem;
+  padding: 8px 14px;
   border-radius: 6px;
   cursor: pointer;
 }
 
+#themeToggle:hover {
+  background: #1e40af;
+
+
+/* test */
+button {
+  background-color: white;
+  color: black;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+button.dark {
+	background-color: #0f172a;
+  color: #e5e7eb;
+}
+
 button:hover {
-  background-color: #1e40af;
+  background-color: darkred;
 }

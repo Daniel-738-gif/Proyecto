@@ -1,6 +1,13 @@
-const btn = document.getElementById('colorBtn');
+const btn = document.getElementById('themeToggle');
+const body = document.body;
 
-btn.addEventListener('click', function () {
-  const randomColor = `hsl(${Math.floor(Math.random() * 360)}, 70%, 80%)`;
-  document.body.style.backgroundColor = randomColor;
+btn.addEventListener('click', () => {
+  body.classList.toggle('dark');
+
+  // Update button text/icon
+  if (body.classList.contains('dark')) {
+    btn.textContent = '☀️ ';
+  } else {
+    btn.textContent = '🌙 ';
+  }
 });
