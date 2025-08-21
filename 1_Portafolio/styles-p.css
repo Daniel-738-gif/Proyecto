@@ -17,8 +17,9 @@ body.dark {
 }
 
 
-#themeToggle {
-  background: darkblue;
+/* boton modo oscuro */
+#modo-oscuro {
+  background: darkcyan;
   color: white;
   border: none;
   padding: 8px 14px;
@@ -29,11 +30,9 @@ body.dark {
   right: 10px;
 }
 
-#themeToggle:hover {
-  background: #1e40af;
+#modo-oscuro:hover {
+  background: gray;
 
-
-/* test */
 button {
   background-color: white;
   color: black;
@@ -46,7 +45,4 @@ button.dark {
   color: #e5e7eb;
 }
 
-button:hover {
-  background-color: darkred;
-}
 

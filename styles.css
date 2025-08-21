@@ -10,16 +10,31 @@ head {
 }
 
 body {
-	
+	position: relative;
+	text-align: center;
 	font-family: Arial, Helvetica, sans-serif;
 	line-height: 1.5;    
-	background: lightblue;
-	color: black;
+	background-image: url('img/fondo3.jpg');
+	background-size: cover;
+	background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+	color: lightgray;
 	font-size: 30px;
-	font-weight: bold;
-	
+
+	}
+/* fondo transparente */
+	body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: -1;
 }
 
+a {
+	font-size: 25px;
+}
 
 h1, h6{
   font-weight: bold;
@@ -27,21 +42,7 @@ h1, h6{
   text-align: center;
 }
 
-p {
 
+	p{
+font-size: 34px;
 }
-
-.centrar {
-	text-align: center;
-}
-
-button
-[
-position: relative;
-  width: 300px;
-  height: 200px;
-  border: 1px solid #ccc;
-  position: absolute;
-  top: 10px;
-  right: 10px;
-]
