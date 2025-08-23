@@ -4,9 +4,11 @@
 html {
 	scroll-behavior: smooth;
 }
-.font {
-  font-weight: 40;
+a {
+  color: #00bfff; /* Vivid blue */
+  text-decoration: none;
 }
+
 body {
 	font-family:'Space Grotesk', sans-serif;
   
@@ -15,26 +17,36 @@ body {
   color: #0f172a;
   transition: background-color 0.3s, color 0.3s; 
 }
-body.dark {
+body.dark{
   background-color: #0f172a;
   color: #e0f7fa;
+  text-shadow: 0 0 8px #00ffcc, 0 0 16px #00ffcc
+}
+
+.glow {
+  text-shadow: 0 0 8px #00ffcc, 0 0 16px #00ffcc;
+  color: #00ffcc;
 }
 
 /* boton modo oscuro */
  #modo-oscuro {
   background: darkcyan;
   color: white;
-  border: none;
   padding: 8px 14px;
   border-radius: 6px;
   cursor: pointer;
   position: absolute;
   top: 10px;
   right: 10px;
+  border: 1px solid #00ffcc;       /* Neon mint border */
+  border-radius: 12px;
+  max-width: 600px;
+  box-shadow: 0 0 12px #00ffcc;    /* Glowing effect */
+  
 }
 
 #modo-oscuro:hover {
-  background: gray;}
+  background-color: #00ffcc;}
 
 button {
   background-color: white;
