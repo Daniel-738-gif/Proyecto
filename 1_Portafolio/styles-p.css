@@ -17,7 +17,7 @@ body.dark {
 }
 
 /* boton modo oscuro */
-#modo-oscuro {
+ #modo-oscuro {
   background: darkcyan;
   color: white;
   border: none;
@@ -30,20 +30,32 @@ body.dark {
 }
 
 #modo-oscuro:hover {
-  background: gray;
+  background: gray;}
 
 button {
   background-color: white;
   color: black;
-  transition: background-color 0.3s, color 0.3s;
-
-}
+  transition: background-color 0.3s, color 0.3s;}
 
 button.dark {
 	background-color: #0f172a;
-  color: #e5e7eb;
+  color: #e5e7eb;}
+
+
+/* separaciones */
+.flex-container {
+  display: flex;
+  width: 100%;
+  max-width: 90%;
+  margin: auto;
 }
 
+.col {
+  flex: 1;
+  padding: 1rem;
+}
 
-/* a */
-
+/* linea vertical */                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     */
+.col:first-child {
+  border-right: 1px solid #ccc;
+}
