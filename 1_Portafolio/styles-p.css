@@ -1,19 +1,23 @@
 /* Pruebas en css */
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap');
 
 html {
 	scroll-behavior: smooth;
 }
-
+.font {
+  font-weight: 40;
+}
 body {
-	font-family: sans-serif;
+	font-family:'Space Grotesk', sans-serif;
+  
   padding: 50px;
-  background-color: lightcyan;
-  color: black;
+  background-color: #F0E8D5;
+  color: #0f172a;
   transition: background-color 0.3s, color 0.3s; 
 }
 body.dark {
   background-color: #0f172a;
-  color: #e5e7eb;
+  color: #e0f7fa;
 }
 
 /* boton modo oscuro */
