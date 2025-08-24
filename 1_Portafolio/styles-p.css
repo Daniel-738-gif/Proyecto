@@ -13,8 +13,8 @@ body {
 	font-family:'Space Grotesk', sans-serif;
   
   padding: 50px;
-  background-color: #F0E8D5;
-  color: #0f172a;
+  background-color: #FAF9F6;
+  color: #3E3E3E;
   transition: background-color 0.3s, color 0.3s; 
 }
 body.dark{
@@ -39,9 +39,9 @@ body.dark{
   top: 10px;
   right: 10px;
   border: 1px solid #00ffcc;       /* Neon mint border */
-  border-radius: 12px;
+  border-radius: 50px;
   max-width: 600px;
-  box-shadow: 0 0 12px #00ffcc;    /* Glowing effect */
+  box-shadow: 0 0 6px #00ffcc;    /* Glowing effect */
   
 }
 
@@ -62,7 +62,7 @@ button.dark {
 .flex-container {
   display: flex;
   width: 100%;
-  max-width: 90%;
+  max-width: 100%;
   margin: auto;
 }
 
@@ -71,7 +71,3 @@ button.dark {
   padding: 1rem;
 }
 
-/* linea vertical */                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     */
-.col:first-child {
-  border-right: 1px solid #ccc;
-}
