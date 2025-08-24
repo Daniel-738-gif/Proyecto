@@ -5,17 +5,25 @@ html {
 	scroll-behavior: smooth;
 }
 a {
-  color: #00bfff; /* Vivid blue */
+  color: #005C7A; /* Vivid blue */
+  text-decoration: none;
+}
+a.dark{
+  color: #152EFF;
   text-decoration: none;
 }
 
+
 body {
 	font-family:'Space Grotesk', sans-serif;
-  
-  padding: 50px;
+  justify-content: space-between;
+  padding: 40px;
   background-color: #FAF9F6;
   color: #3E3E3E;
   transition: background-color 0.3s, color 0.3s; 
+}
+div{
+  text-align: justify;
 }
 body.dark{
   background-color: #0f172a;
@@ -35,7 +43,7 @@ body.dark{
   padding: 8px 14px;
   border-radius: 6px;
   cursor: pointer;
-  position: absolute;
+  position: fixed;
   top: 10px;
   right: 10px;
   border: 1px solid #00ffcc;       /* Neon mint border */

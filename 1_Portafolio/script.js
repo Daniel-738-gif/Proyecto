@@ -1,5 +1,6 @@
 const btn = document.getElementById('modo-oscuro');
 const body = document.body;
+const a = document.a;
 
 btn.addEventListener('click', () => {
   body.classList.toggle('dark');
