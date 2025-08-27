@@ -5,7 +5,7 @@ const a = document.a;
 btn.addEventListener('click', () => {
   body.classList.toggle('dark');
 
-    // Update button text/icon
+    // Alctualiza texto del botn + icono
       if (body.classList.contains('dark')) 
         {
         btn.textContent = '☀️ Modo claro';
