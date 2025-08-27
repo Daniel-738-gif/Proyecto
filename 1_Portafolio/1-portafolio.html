@@ -29,6 +29,27 @@
         <a href="#EXPERIENCIA">Experiencia</a><br>
         <a href="#PROJECTOS">Projectos</a>
 
+        <div>
+          <form>
+            <label for="email">Direccion de correo</label>
+            <input type="email" id="email" name="email" required>
+          </form> 
+           <a href="#">Contacto</a>
+              <a href="#" class="contact-link" onclick="openModal()">Contacto</a>
+            <div id="contactModal" class="modal">
+              <div class="modal-content">
+                <span class="close-btn" onclick="closeModal()">&times;</span>
+                <h2>Contacto</h2>
+                <form>
+                  <input type="text" placeholder="Nombre" required>
+                  <input type="email" placeholder="Correo" required>
+                  <textarea rows="4" placeholder="Mensaje" required></textarea>
+                  <button type="submit">Enviar</button>
+                </form>
+              </div>
+            </div>
+          </div>
+
       </div>
 
       <!--<Lado derecho-->
@@ -49,10 +70,12 @@
        </div> 
 
      </div>
-<form>
-  <label for="email">Email address:</label>
-  <input type="email" id="email" name="email" required>
-</form>
+
+  </nav>
+  <div class="social-icons">
+    <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+    <a href="https://facebook.com"><i class="fab fa-facebook"></i></a>
+
    </main>
 
   <footer>
@@ -61,12 +84,7 @@
     <a href="#YO">Acerca de mi</a>
     <a href="#EXPERIENCIA">Experiencia</a>
     <a href="#PROJECTOS">Projectos</a>
-    <a href="#">Contacto</a>
-    
-  </nav>
-  <div class="social-icons">
-    <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
-    <a href="https://facebook.com"><i class="fab fa-facebook"></i></a>
+   
   </div></footer>
 </body>
   
