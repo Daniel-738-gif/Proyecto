@@ -18,18 +18,24 @@ btn.addEventListener('click', () => {
 
 
 );
+
+
 // formulario//
-function openModal() {
-  document.getElementById('contactModal').style.display = 'block';
-}
+const openLink = document.querySelector('.open-popup');
+const popup = document.getElementById('popup');
+const closeBtn = document.querySelector('.close-popup');
 
-function closeModal() {
-  document.getElementById('contactModal').style.display = 'none';
-}
+openLink.addEventListener('click', function(e) {
+  e.preventDefault();
+  popup.style.display = 'block';
+});
 
-window.onclick = function(event) {
-  const modal = document.getElementById('contactModal');
-  if (event.target === modal) {
-    modal.style.display = 'none';
+closeBtn.addEventListener('click', function() {
+  popup.style.display = 'none';
+});
+
+window.addEventListener('click', function(e) {
+  if (e.target === popup) {
+    popup.style.display = 'none';
   }
-}
+});

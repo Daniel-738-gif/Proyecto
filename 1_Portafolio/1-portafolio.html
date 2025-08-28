@@ -29,26 +29,20 @@
         <a href="#EXPERIENCIA">Experiencia</a><br>
         <a href="#PROJECTOS">Projectos</a>
 
-        <div>
-          <form>
-            <label for="email">Direccion de correo</label>
-            <input type="email" id="email" name="email" required>
-          </form> 
-           <a href="#">Contacto</a>
-              <a href="#" class="contact-link" onclick="openModal()">Contacto</a>
-            <div id="contactModal" class="modal">
-              <div class="modal-content">
-                <span class="close-btn" onclick="closeModal()">&times;</span>
-                <h2>Contacto</h2>
-                <form>
-                  <input type="text" placeholder="Nombre" required>
-                  <input type="email" placeholder="Correo" required>
-                  <textarea rows="4" placeholder="Mensaje" required></textarea>
-                  <button type="submit">Enviar</button>
-                </form>
-              </div>
-            </div>
-          </div>
+        <a href="#" class="open-popup">Contact</a>
+
+  <div id="popup" class="popup-overlay">
+    <div class="popup-box">
+      <span class="close-popup">&times;</span>
+      <h2>Contact Us</h2>
+      <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" rows="4" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </div>
 
       </div>
 
