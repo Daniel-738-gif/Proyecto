@@ -98,6 +98,8 @@ button.dark {
   padding: 1rem;
 }
 
+
+
 .open-popup {
   font-size: 18px;
   color: #0078D7;
@@ -155,7 +157,3 @@ button[type="submit"] {
   cursor: pointer;
 }
 
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
