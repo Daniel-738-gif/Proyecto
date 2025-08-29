@@ -23,9 +23,15 @@ body a:hover{
   text-decoration:  ;
 
 }
-body div{
+body div {
   text-align: justify;
 }
+
+.subir {
+  margin: -100px;
+  position: relative;
+}
+
 body.dark{
   background-color: #0f172a;
   color: #e0f7fa;
