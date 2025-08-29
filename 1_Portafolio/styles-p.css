@@ -8,9 +8,7 @@ a {
   color: #005C7A; /* Vivid blue */
   text-decoration: none;
 }
-a.dark{
-  color: #152EFF;
-  text-decoration: none;
+
 }
 
 .test{
@@ -34,26 +32,24 @@ body.dark{
   text-shadow: 0 0 8px #00ffcc, 0 0 16px #00ffcc
 }
 footer {
-  background-color: #222;
+  background-color: #3E3E3E;
   color: #eee;
   padding: 5px;
   text-align: center;
 }
 
 footer a {
-  color: #00ffff;
+  color: #005C7A;
   margin: 0 10px;
   text-decoration: none;
+  box-shadow: 0 0 2px #00ffcc;    /* Glowing effect */
 }
 
 footer a:hover {
   text-decoration: underline;
 }
 
-.glow {
-  text-shadow: 0 0 8px #00ffcc, 0 0 16px #00ffcc;
-  color: #00ffcc;
-}
+
 
 /* boton modo oscuro */
  #modo-oscuro {
@@ -68,7 +64,7 @@ footer a:hover {
   border: 1px solid #00ffcc;       /* Neon mint border */
   border-radius: 50px;
   max-width: 600px;
-  box-shadow: 0 0 6px #00ffcc;    /* Glowing effect */
+  box-shadow: 0 0 2px #00ffcc;    /* Glowing effect */
   
 }
 
@@ -94,12 +90,12 @@ button.dark {
 }
 
 .col {
-  flex: 1;
+  flex: 11;
   padding: 1rem;
 }
 
 
-
+/* Formulario */
 .open-popup {
   font-size: 18px;
   color: #0078D7;
@@ -148,7 +144,7 @@ input, textarea {
 
 button[type="submit"] {
   margin-top: 15px;
-  background-color: #0078D7;
+  background-color: #00ffcc;
   color: white;
   border: none;
   padding: 10px;
@@ -157,3 +153,7 @@ button[type="submit"] {
   cursor: pointer;
 }
 
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
