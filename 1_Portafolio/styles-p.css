@@ -5,16 +5,11 @@ html {
 	scroll-behavior: smooth;
 }
 a {
-  color: #005C7A; /* Vivid blue */
+  color: #0078D7; /* Vivid blue */
   text-decoration: none;
 }
 
-}
 
-.test{
-  top: 10px;
-  right: 10px;
-}
 body {
 	font-family:'Space Grotesk', sans-serif;
   justify-content: space-between;
@@ -23,7 +18,12 @@ body {
   color: #3E3E3E;
   transition: background-color 0.3s, color 0.3s; 
 }
-div{
+
+body a:hover{
+  text-decoration:  ;
+
+}
+body div{
   text-align: justify;
 }
 body.dark{
@@ -39,10 +39,10 @@ footer {
 }
 
 footer a {
-  color: #005C7A;
-  margin: 0 10px;
+  color: #0078D7;
+  margin: 30px;
   text-decoration: none;
-  box-shadow: 0 0 2px #00ffcc;    /* Glowing effect */
+
 }
 
 footer a:hover {
