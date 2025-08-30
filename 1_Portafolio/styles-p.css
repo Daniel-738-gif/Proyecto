@@ -28,7 +28,7 @@ body div {
 }
 
 .subir {
-  margin: -100px;
+  margin: -50px;
   position: relative;
 }
 
@@ -38,15 +38,17 @@ body.dark{
   text-shadow: 0 0 8px #00ffcc, 0 0 16px #00ffcc
 }
 footer {
+  padding: 10px;
+  width: 100%;
   background-color: #3E3E3E;
   color: #eee;
-  padding: 5px;
-  text-align: center;
-}
+  text-align: center;}
 
 footer a {
+  font-size: 20px;
   color: #0078D7;
-  margin: 30px;
+
+  margin: 25px;
   text-decoration: none;
 
 }
@@ -91,13 +93,13 @@ button.dark {
 .flex-container {
   display: flex;
   width: 100%;
-  max-width: 100%;
-  margin: auto;
+  max-width: 95%;
+  gap: 100px;
 }
 
 .col {
-  flex: 11;
-  padding: 1rem;
+  flex: 1px;
+  padding: auto;
 }
 
 
