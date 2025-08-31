@@ -7,7 +7,7 @@
   --accent-color: #00ffcc;
   --letras: #3E3E3E;
   --letras-oscuro: #e0f7fa;
-  --fondo-claro: #FAF9F6;
+  --fondo-claro: #F2F0E8;
   --fondo-oscuro: #0f172a;
   --espaciado: 40px;
 }
@@ -54,27 +54,70 @@ body div {
   margin: -50px;
   position: relative;
 }
-
+/* modo oscuro */
 body.dark{
   transition: background-color 0.5s ease, color 0.5s ease;
   background-color: #0f172a;
   color: #e0f7fa;
   
 }
-body.dark div
+
+@keyframes arcoiris {
+  0%   { text-shadow: 0 0 8px #ff00cc; }
+  25%  { text-shadow: 0 0 8px #00ffff; }
+  50%  { text-shadow: 0 0 8px #00ff00; }
+  75%  { text-shadow: 0 0 8px #ffff00; }
+  100% { text-shadow: 0 0 8px #ff00cc; }
+}
+body.dark p, body.dark h1, body.dark h2, body.dark h3
 {
   text-shadow: 0 0 8px #00ffcc, 0 0 16px #00ffcc;
+  
 }
-main a.dark{
-  color: yellow;
+body.dark a{
+  color: var(--letras-oscuro) !important;
+  text-shadow: 0 0 80px #ff00cc;
+  animation: arcoiris 3s infinite ease-in-out;
 }
+body.dark a:hover {
+  text-shadow: 0 0 12px #ffffff, 0 0 24px #ffffff;
+  transition: text-shadow 0.3s ease;
+}
+
 
 
  main a:hover{
   text-decoration: underline;
  }
 
- 
+/* boton modo oscuro */
+   #modo-oscuro {
+    background: darkcyan;
+    color: white;
+    padding: 8px 14px;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: 1px solid #00ffcc;       /* borde texto */
+    border-radius: 50px;
+    max-width: 600px;
+    box-shadow: 0 0 2px #00ffcc;    /* brillo */
+    
+  }
+
+
+
+  #modo-oscuro:hover {
+  background-color: #00ffcc;
+  transition: background-color 0.3s, color 2s;}
+
+
+
+
+
+
+
 
 /* Pie de pagina */
 footer {
@@ -108,42 +151,10 @@ footer {
 
 
 
-/* boton modo oscuro */
-   #modo-oscuro {
-    background: darkcyan;
-    color: white;
-    padding: 8px 14px;
-    cursor: pointer;
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    border: 1px solid #00ffcc;       /* borde texto */
-    border-radius: 50px;
-    max-width: 600px;
-    box-shadow: 0 0 2px #00ffcc;    /* brillo */
-    
-  }
 
 
 
-  #modo-oscuro:hover {
-  background-color: #00ffcc;
-  transition: background-color 0.3s, color 2s;}
 
-
-
-/* 
-button {
-  background-color: white;
-  color: black;
-  transition: background-color 0.3s, color 0.3s;}
-
-button.dark {
-	background-color: #0f172a;
-  color: #e5e7eb;}
- */
-
-/* separaciones */
 .flex-container {
   display: flex;
   width: 100%;
