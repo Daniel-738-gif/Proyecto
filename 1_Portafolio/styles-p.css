@@ -54,6 +54,13 @@ body.dark{
   color: #e0f7fa;
   text-shadow: 0 0 8px #00ffcc, 0 0 16px #00ffcc
 }
+main a {
+  color: black;
+  
+}
+ main a:hover{
+  text-decoration: underline;
+ }
 
 /* Pie de pagina */
 footer {
