@@ -5,10 +5,10 @@
 :root {
   --primary-color: #0078D7;
   --accent-color: #00ffcc;
-  --text-color: #3E3E3E;
-  --bg-light: #FAF9F6;
-  --bg-dark: #0f172a;
-  --spacing: 40px;
+  --letras: #3E3E3E;
+  --fondo-claro: #FAF9F6;
+  --fondo-oscuro: #0f172a;
+  --espaciado: 40px;
 }
 
 
@@ -56,10 +56,14 @@ body.dark{
 }
 main a {
   color: black;
-  
+
 }
  main a:hover{
   text-decoration: underline;
+ }
+
+ .test{
+  color: black;
  }
 
 /* Pie de pagina */
@@ -89,25 +93,28 @@ footer {
 
 
 /* boton modo oscuro */
- #modo-oscuro {
-  background: darkcyan;
-  color: white;
-  padding: 8px 14px;
-  border-radius: 6px;
-  cursor: pointer;
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  border: 1px solid #00ffcc;       /* borde texto */
-  border-radius: 50px;
-  max-width: 600px;
-  box-shadow: 0 0 2px #00ffcc;    /* brillo */
-  transition: background-color 0.3s, color 2s;
-}
+   #modo-oscuro {
+    background: darkcyan;
+    color: white;
+    padding: 8px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: 1px solid #00ffcc;       /* borde texto */
+    border-radius: 50px;
+    max-width: 600px;
+    box-shadow: 0 0 2px #00ffcc;    /* brillo */
+    transition: background-color 0.3s, color 2s;
+  }
 
-#modo-oscuro:hover {
-  background-color: #00ffcc;
-transition: background-color 0.3s, color 2s;}
+
+
+  #modo-oscuro:hover {
+    background-color: #00ffcc;
+  transition: background-color 0.3s, color 2s;}
+  
 
 /* 
 button {
@@ -137,9 +144,10 @@ button.dark {
 /* Formulario */
 .open-popup {
   font-size: 18px;
-  color: #0078D7;
+  color: var(--letras);
   text-decoration: none;
   cursor: pointer;
+  font-size: ;
 }
 
 .popup-overlay {
