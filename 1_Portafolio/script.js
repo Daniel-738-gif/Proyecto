@@ -21,9 +21,9 @@ btn.addEventListener('click', () => {
 
 
 // formulario//
-const openLink = document.querySelector('.open-popup');
-const popup = document.getElementById('popup');
-const closeBtn = document.querySelector('.close-popup');
+const openLink = document.querySelector('.a-contacto-formulario');
+const popup = document.getElementById('form');
+const closeBtn = document.querySelector('.cerrar-form');
 
 openLink.addEventListener('click', function(e) {
   e.preventDefault();

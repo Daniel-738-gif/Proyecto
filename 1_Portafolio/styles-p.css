@@ -6,6 +6,7 @@
   --primary-color: #0078D7;
   --accent-color: #00ffcc;
   --letras: #3E3E3E;
+  --letras-oscuro: #e0f7fa;
   --fondo-claro: #FAF9F6;
   --fondo-oscuro: #0f172a;
   --espaciado: 40px;
@@ -17,26 +18,31 @@ html {
   height: 100%;
   margin: 0;
 }
+/* Pie de pagina 
 a {
-  color: #0078D7; /* Vivid blue */
+  color: #0078D7; 
   text-decoration: none;
 }
-
+*/
 
 
 body {
 	font-family:'Space Grotesk', sans-serif;
   justify-content: space-between;
   padding: 0 40px;
-  background-color: #FAF9F6;
+  background-color: var(--fondo-claro);
   color: #3E3E3E;
   transition: background-color 0.3s, color 0.3s; 
   height: 100%;
   margin: 0;
 }
 
+body a{
+  color: var(--primary-color);
+  text-decoration: none;
+}
 body a:hover{
-  text-decoration: a ;
+  text-decoration: underline ;
 
 }
 body div {
@@ -50,21 +56,25 @@ body div {
 }
 
 body.dark{
+  transition: background-color 0.5s ease, color 0.5s ease;
   background-color: #0f172a;
   color: #e0f7fa;
-  text-shadow: 0 0 8px #00ffcc, 0 0 16px #00ffcc
+  
 }
-main a {
-  color: black;
+body.dark div
+{
+  text-shadow: 0 0 8px #00ffcc, 0 0 16px #00ffcc;
+}
+main a.dark{
+  color: yellow;
+}
 
-}
+
  main a:hover{
   text-decoration: underline;
  }
 
- .test{
-  color: black;
- }
+ 
 
 /* Pie de pagina */
 footer {
@@ -75,6 +85,12 @@ footer {
   margin-left: calc(-50vw + 50%);
   text-align: center;
 }
+
+.alinear{
+    top: 20000px;
+    left: 200px; 
+    
+  }
 
   footer a {
     margin: 10px;
@@ -97,7 +113,6 @@ footer {
     background: darkcyan;
     color: white;
     padding: 8px 14px;
-    border-radius: 6px;
     cursor: pointer;
     position: absolute;
     top: 10px;
@@ -106,15 +121,16 @@ footer {
     border-radius: 50px;
     max-width: 600px;
     box-shadow: 0 0 2px #00ffcc;    /* brillo */
-    transition: background-color 0.3s, color 2s;
+    
   }
 
 
 
   #modo-oscuro:hover {
-    background-color: #00ffcc;
+  background-color: #00ffcc;
   transition: background-color 0.3s, color 2s;}
-  
+
+
 
 /* 
 button {
@@ -140,17 +156,20 @@ button.dark {
  padding: 0 40px;
 }
 
-
+.letras-oscuro{
+  color: var(--fondo-claro);
+}
 /* Formulario */
-.open-popup {
-  font-size: 18px;
-  color: var(--letras);
+.a-contacto-formulario {
+  font-size: 25px;
+  color: var(--primary-color);
+  font-weight: bold;
   text-decoration: none;
   cursor: pointer;
-  font-size: ;
+  
 }
 
-.popup-overlay {
+.posicion-form {
   display: none;
   position: fixed;
   top: 0; left: 0;
@@ -158,41 +177,46 @@ button.dark {
   background: rgba(0, 0, 0, 0.6);
   animation: fadeIn 0.3s ease;
   z-index: 1000;
+
 }
 
-.popup-box {
-  background: #fff;
-  width: 320px;
+.form-box {
+  background: var(--fondo-oscuro);
+  width: 500px;
+  max-height: 90vh;
   margin: 10% auto;
   padding: 20px;
   border-radius: 8px;
   position: relative;
   box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-.close-popup {
+.cerrar-form {
   position: absolute;
-  top: 10px; right: 15px;
-  font-size: 22px;
+  top: 0; 
+  right: 15px;
+  font-size: 50px;
   cursor: pointer;
-  color: #888;
+  color: var(--fondo-claro);
 }
 
-.close-popup:hover {
-  color: #000;
+.cerrar-form:hover {
+  
+  color: var(--primary-color);
 }
 
-input, textarea {
+main input, textarea {
   width: 100%;
   margin-top: 10px;
   padding: 8px;
   box-sizing: border-box;
 }
 
-button[type="submit"] {
+main button[type="submit"] {
   margin-top: 15px;
-  background-color: #00ffcc;
-  color: white;
+  background-color: var(--primary-color);
+  color: var(--letras-oscuro);
   border: none;
   padding: 10px;
   width: 100%;
