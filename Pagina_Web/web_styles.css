@@ -49,21 +49,30 @@ main {
 
 }
 
+
+
+
+
 .nav{
 	display: flex;
   align-items: center;
+  position: relative;
   justify-content: space-between;
   background-color: #333;
-  padding: 1rem 2rem;
+  padding: 1px 2px;
 
 }
 
 .nav1 {
-		list-style: none;
-		display: flex;
-		gap: 50px;
-		margin: 0 auto;
+
+	position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 50px;
+  list-style: none;
 		}
+
 .nav1 a {
 	text-decoration: none;
 	color: white;
@@ -74,6 +83,13 @@ main {
 	color: #ff9800;
 }
 
+
+
+
+
+.logo{
+	flex: 0 0 auto;
+}
 .logo img{
 	height: 40px;
 	width: auto;
@@ -84,19 +100,30 @@ main {
 	font-size: 1.5rem;
 	font-weight: bold;
 }
+
+
+
+
+
+
+
+/* btn*/
+
 .nav_botones{
+	flex: 0 0 auto;
 	display: flex;
 	gap: 10px;
+	flex-shrink: 0;
+	flex-grow: 0;
+	flex-basis: auto;
 }
 
 .btn {
 	background-color: var(--fondo1);
 	border: 1px solid white;
-	
-	padding: 1rem 2rem;
+	padding: 0.5rem 4rem;
 	font-weight: bold;
 	cursor: pointer;
-	
 	transition: background-color 0.3s ease;
 	border-radius: 50px;
 	
@@ -105,6 +132,10 @@ main {
 	.btn:hover{
 		background-color: var(--fondo3);
 	} 
+
+
+
+
 
 
 footer{
