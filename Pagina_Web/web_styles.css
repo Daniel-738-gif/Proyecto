@@ -3,8 +3,7 @@
 	margin: 0;
   padding: 0;
   box-sizing: border-box;
-	color: white;
-}
+	}
 
 :root {
 	font-size: 16px;
@@ -31,10 +30,7 @@ html{
 
 body {
 
-	background-image: url(test.gif);
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center;
+	
   font-family: 'Roboto', sans-serif;
   font-weight: 400; 
   font-style: normal; /* Or 'italic' */
@@ -49,6 +45,24 @@ main {
 	flex: 1;
 
 }
+
+
+
+
+
+.gif {
+
+	background-image: url(test.gif);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	position: absolute;
+}
+
+
+
+
+
 
 
 
