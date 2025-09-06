@@ -50,14 +50,6 @@ main {
 
 
 
-.gif {
-
-	background-image: url(test.gif);
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center;
-	position: absolute;
-}
 
 
 
@@ -73,8 +65,10 @@ main {
   align-items: center;
   position: relative;
   justify-content: space-between;
-  background-color: #333;
+  background-color: var(--fondo1);
+  /* 
   padding: 1px 2px;
+	*/
 
 }
 
@@ -136,6 +130,7 @@ main {
 .btn {
 	background-color: var(--fondo1);
 	border: 1px solid white;
+	color: white;
 	width: 130px;
   height: 50px;
 	padding: 0.5rem 1rem;
@@ -158,9 +153,15 @@ main {
 		background-color: var(--fondo3);
 	} 
 
+
+
+
+
+
+
 .mid{
 		
- 
+ 	
 	text-align: center;
 	display: flex;
 	flex-direction: column;
@@ -169,10 +170,49 @@ main {
   height: 100vh;
   font-size: 1.5rem;
   font-weight: bold;
-  color: green;
-  gap: 10px;
+  background-color: var(--fondo2);
+  gap: 1px;
+ 
   
 }
+.mid p {
+	
+	position: relative;
+	z-index: 2;
+}
+
+.letra1{
+	color: var(--fondo3);
+}
+.letra2{
+	color: white;
+}
+
+
+.gif {
+
+	position: absolute;
+	width: 300px;
+	height: 500px;
+	top: 55%;
+	left: 50%;
+	pointer-events: none;
+	z-index: 1;
+	transform: translate(-50%, -50%);
+	opacity: 0.2;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
