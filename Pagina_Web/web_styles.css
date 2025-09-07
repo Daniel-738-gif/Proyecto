@@ -151,6 +151,21 @@ main {
 	transition: background-color 0.3s ease;
 	border-radius: 50px;
 }
+.btn3 {
+	font-size: 1.2rem;
+	background-color: var(--fondo4);
+	width: 130px;
+  height: 50px;
+	padding: 0.5rem 1rem;
+	font-weight: bold;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+	border-radius: 50px;
+	z-index: 2;
+
+}
+
+
 	.btn:hover{
 		background-color: var(--fondo3);
 	} 
@@ -172,7 +187,7 @@ main {
   height: 100vh;
   font-size: 1.5rem;
   font-weight: bold;
-  background-color: var(--fondo2);
+  background-color: var(--fondo1);
   gap: 1px;
  
   
@@ -184,7 +199,7 @@ main {
 }
 
 .letra1{
-	color: var(--fondo3);
+	color: var(--fondo4);
 }
 .letra2{
 	color: white;
@@ -201,7 +216,7 @@ main {
 	pointer-events: none;
 	z-index: 1;
 	transform: translate(-50%, -50%);
-	opacity: 0.2;
+	/*opacity: 0.2;*/
 	}
 
 
