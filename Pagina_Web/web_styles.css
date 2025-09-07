@@ -7,10 +7,11 @@
 
 :root {
 	font-size: 16px;
-	--fondo1: #1A1A1D;
+	--fondo1: #342E37;
 	--fondo2: #3B1C32;
 	--fondo3: #6A1E55;
 	--fondo4: #A64D79;
+	--letras: #E2CADB;
 	/* Or base_modo oscuro 
 	color-scheme: dark;*/
 }
@@ -187,7 +188,7 @@ main {
   height: 100vh;
   font-size: 1.5rem;
   font-weight: bold;
-  background-color: var(--fondo2);
+  background-color: var(--fondo1);
   gap: 1px;
  
   
@@ -207,8 +208,7 @@ main {
 
 
 .gif {
-	display: none;
-	position: absolute;
+		position: absolute;
 	width: 300px;
 	height: 500px;
 	top: 55%;
@@ -223,19 +223,28 @@ main {
 
 /*tablas*/
 .tabla{
-	background-color: cyan;
+	position: fixed;
+	display: none;
+	background-color: var(--fondo4);
 	color: white;
-	width: 100%;
-	height: 40%;	
+	top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+	transition: opacity 0.3s ease;
+	border: 10px solid var(--fondo1);
+  border-collapse: collapse;
 
 }
 .tabla table, th, td{
-	border: 1px solid yellow;
+	border: 1px solid black;
 	border-collapse: collapse;
 }
 .tabla th, td{
 	padding: 10px;
-	background-color: green;
+	background-color: var(--fondo1);
 }
 
 
@@ -245,7 +254,15 @@ main {
 	font-size: 1.2rem;
 	margin-bottom: 10px;
 }
-
+.cerrar{
+	color: var(--fondo1);
+  position: absolute;
+  top: 0; 
+  right: 15px;
+  font-size: 50px;
+  cursor: pointer;
+  
+}
 
 
 
