@@ -7,11 +7,13 @@
 
 :root {
 	font-size: 16px;
-	--fondo1: #342E37;
+	--fondo1: #342E37; /**/
 	--fondo2: #3B1C32;
 	--fondo3: #6A1E55;
 	--fondo4: #A64D79;
+	--footer: #260506;
 	--letras: #E2CADB;
+	--nav: #202031;
 	/* Or base_modo oscuro 
 	color-scheme: dark;*/
 }
@@ -38,7 +40,7 @@ body {
 }
 header{
 	padding: 10px;
-	background-color: var(--fondo1);
+	background-color: var(--nav);
 	
 }
 
@@ -66,7 +68,7 @@ main {
   align-items: center;
   position: relative;
   justify-content: space-between;
-  background-color: var(--fondo1);
+  background-color: var(--nav1);
   /* 
   padding: 1px 2px;
 	*/
@@ -280,7 +282,7 @@ footer{
   padding: 1rem;
   text-align: center;
 	padding: 10px;
-	background-color: var(--fondo1)	;
+	background-color: var(--footer)	;
 }
 
 
