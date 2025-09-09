@@ -149,6 +149,7 @@ main {
 .btn2 {
 	font-size: 1.2rem;
 	background-color: var(--btn);
+	color: var(--letras);
 	width: 130px;
   height: 50px;
 	padding: 0.5rem 1rem;
@@ -160,6 +161,7 @@ main {
 .btn3 {
 	font-size: 1.2rem;
 	background-color: var(--btn);
+	color: var(--letras);
 	width: 130px;
   height: 50px;
 	padding: 0.5rem 1rem;
@@ -173,7 +175,7 @@ main {
 
 
 	.btn:hover{
-		background-color: var(--fondo3);
+		background-color: var(--btn);
 	} 
 
 
