@@ -12,8 +12,11 @@
 	--fondo3: #6A1E55;
 	--fondo4: #A64D79;
 	--footer: #260506;
-	--letras: #E2CADB;
+	--letras: #B0B0C3;
 	--nav: #202031;
+	--base: #202031;
+	--btn: #6A1E55;
+	--borde: #2A2F4D;
 	/* Or base_modo oscuro 
 	color-scheme: dark;*/
 }
@@ -87,7 +90,7 @@ main {
 
 .nav1 a {
 	text-decoration: none;
-	color: white;
+	color: var(--letras)	;
 	font-weight: 500;
 	transition: color 0.3 ease;
 }
@@ -131,10 +134,10 @@ main {
 }
 
 .btn {
-	background-color: var(--fondo1);
+	background-color: var(--base);
 	font-size: 1rem;
-	border: 1px solid white;
-	color: white;
+	border: 1px solid var(--borde);
+	color: var(--letras);
 	width: 130px;
   height: 50px;
 	padding: 0.5rem 1rem;
@@ -145,7 +148,7 @@ main {
 	
 .btn2 {
 	font-size: 1.2rem;
-	background-color: var(--fondo4);
+	background-color: var(--btn);
 	width: 130px;
   height: 50px;
 	padding: 0.5rem 1rem;
@@ -156,7 +159,7 @@ main {
 }
 .btn3 {
 	font-size: 1.2rem;
-	background-color: var(--fondo4);
+	background-color: var(--btn);
 	width: 130px;
   height: 50px;
 	padding: 0.5rem 1rem;
@@ -190,7 +193,7 @@ main {
   height: 100vh;
   font-size: 1.5rem;
   font-weight: bold;
-  background-color: var(--fondo1);
+  background-color: var(--base);
   gap: 1px;
  
   
@@ -202,10 +205,10 @@ main {
 }
 
 .letra1{
-	color: var(--fondo4);
+	color: var(--btn);
 }
 .letra2{
-	color: white;
+	color: var(--letras);
 }
 
 
