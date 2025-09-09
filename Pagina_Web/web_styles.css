@@ -17,6 +17,7 @@
 	--base: #202031;
 	--btn: #6A1E55;
 	--borde: #2A2F4D;
+	--a: #D6CFEA;
 	/* Or base_modo oscuro 
 	color-scheme: dark;*/
 }
@@ -32,6 +33,7 @@ html, body {
 html{
 
 }
+
 
 
 body {
@@ -95,7 +97,7 @@ main {
 	transition: color 0.3 ease;
 }
 .nav1 a:hover {
-	color: #ff9800;
+	color: #D6CFEA;
 }
 
 
@@ -204,6 +206,15 @@ main {
 	
 	position: relative;
 	z-index: 2;
+	 position: relative;
+  z-index: 2;
+  animation: push-up 1.8s ease-out forwards
+}
+.mid p:nth-child(1) {
+  animation-delay: 0.3s;
+}
+.mid p:nth-child(2) {
+  animation-delay: 0.6s;
 }
 
 .letra1{
@@ -291,3 +302,16 @@ footer{
 }
 
 
+@keyframes push-up {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  60% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-5%);
+  }
+}
