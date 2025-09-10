@@ -18,6 +18,7 @@
 	--btn: #6A1E55;
 	--borde: #2A2F4D;
 	--a: #D6CFEA;
+	--footer: #2A2F4D;
 	/* Or base_modo oscuro 
 	color-scheme: dark;*/
 }
@@ -294,7 +295,7 @@ main {
 /*pie de pagina*/
 
 footer{
-	color: white;
+	color: var(--letras);
   padding: 1rem;
   text-align: center;
 	padding: 10px;
