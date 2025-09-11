@@ -75,6 +75,7 @@ overflow: hidden;
 }
 
 .over{
+	mix-blend-mode: difference;
 	 position: relative;
   z-index: 1;
   color: white;
@@ -199,6 +200,7 @@ overflow: hidden;
 	border-radius: 50px;
 	z-index: 2;
 
+
 }
 
 
@@ -223,7 +225,7 @@ overflow: hidden;
   height: 100vh;
   font-size: 1.5rem;
   font-weight: bold;
-  background-color: var(--base);
+  
   gap: 1px;
  
   
@@ -244,14 +246,15 @@ overflow: hidden;
 }
 
 .letra1{
-	color: var(--btn);
+	color: white;
 }
 .letra2{
-	color: var(--letras);
+	color: white;
 }
 
 
 .gif {
+	display: none;
 		position: absolute;
 	width: 300px;
 	height: 500px;
@@ -269,7 +272,7 @@ overflow: hidden;
 .tabla{
 	position: fixed;
 	display: none;
-	background-color: var(--fondo4);
+	background-color: var(--base);
 	color: white;
 	top: 50%;
   left: 50%;
@@ -294,12 +297,12 @@ overflow: hidden;
 
 
 .tabla caption{
-	color: black;
+	color: var(--letras);
 	font-size: 1.2rem;
 	margin-bottom: 10px;
 }
 .cerrar{
-	color: var(--fondo1);
+	color: var(--letras);
   position: absolute;
   top: 0; 
   right: 15px;
