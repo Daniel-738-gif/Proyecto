@@ -252,12 +252,27 @@ overflow: hidden;
 	color: white;
 }
 
+.vid{
+ 	
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  font-size: 1.5rem;
+  font-weight: bold;
+  
+  gap: 1px;
+ 
+  
 
+}
 .loop {
-	
+	z-index: 0;
 	position: absolute;
-	width: 1px;
-	height: 2px;
+	width: 500px;
+	height: 400px;
 	top: 55%;
 	left: 50%;
 	pointer-events: none;
