@@ -3,6 +3,7 @@
 	margin: 0;
   padding: 0;
   box-sizing: border-box;
+
 	}
 
 :root {
@@ -25,8 +26,9 @@
 
 
 html, body {
-  height: 100%;
-  margin: 0;
+
+  
+ 	width: 100%;
   display: flex;
   flex-direction: column;
 }
@@ -41,7 +43,7 @@ body {
 
 	
   font-family: 'Roboto', sans-serif;
-  font-weight: 400; 
+  
   font-style: normal; /* Or 'italic' */
 }
 header{
@@ -72,12 +74,18 @@ overflow: hidden;
 	transform: translate(-50%,-50%);
 	object-fit: cover;
 	z-index: -1;
+	outline: 2px solid blue;
+
 }
 
+
+
+
 .over{
+	outline: 1px solid red;
 	mix-blend-mode: difference;
 	 position: relative;
-  z-index: 1;
+  z-index: 2;
   color: white;
   text-align: center;
   padding-top: 20vh;
@@ -190,6 +198,7 @@ overflow: hidden;
 .btn3 {
 	font-size: 1.2rem;
 	background-color: var(--btn);
+	border: none;
 	color: var(--letras);
 	width: 130px;
   height: 50px;
@@ -213,27 +222,23 @@ overflow: hidden;
 
 
 
-/* btn*/
+/* video en el centro*/
 .mid{
 		
  	
-	text-align: center;
+	
 	display: flex;
 	flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  font-size: 1.5rem;
-  font-weight: bold;
   
-  gap: 1px;
+  
  
   
 }
 .mid p {
 	
-	position: relative;
-	z-index: 2;
+
 	 position: relative;
   z-index: 2;
   animation: push-up 1.8s ease-out forwards
@@ -245,38 +250,35 @@ overflow: hidden;
   animation-delay: 0.6s;
 }
 
-.letra1{
+ .letra1, .letra2 {
+ 	font-size: 2rem;
 	color: white;
+	margin-bottom: px;
+	z-index: 2;
 }
-.letra2{
-	color: white;
-}
-
-.vid{
- 	
-	text-align: center;
-	display: flex;
-	flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.letra1, .letra2, .btn3{
   
-  font-size: 1.5rem;
-  font-weight: bold;
-  
-  gap: 1px;
- 
-  
+	margin-bottom: 10px;
 
 }
+	.letra1{
+		color: #479EEB;
+		font-size: 3rem;
+	}
+
+
+
 .loop {
-	z-index: 0;
+	z-index: -1;
 	position: absolute;
-	width: 500px;
-	height: 400px;
-	top: 55%;
+	
+	width: 700px;
+	height: 450px;
+	top: 62%;
 	left: 50%;
-	pointer-events: none;
-	z-index: 1;
+	object-fit: cover;
+	
+
 	transform: translate(-50%, -50%);
 	/*opacity: 0.2;*/
 	}
@@ -344,7 +346,7 @@ footer{
 	padding: 10px;
 	background-color: var(--footer)	;
 }
-
+/*opacity: 0.2;
 
 @keyframes push-up {
   0% {
@@ -358,4 +360,4 @@ footer{
   100% {
     transform: translateY(-5%);
   }
-}
+}*/
