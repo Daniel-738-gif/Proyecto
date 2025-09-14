@@ -66,6 +66,8 @@ overflow: hidden;
 }
 
 .bgr-vid video{
+	animation: fadeCrop 1s ease-in-out 5s forwards;
+  border: 5px solid red; /* temporary visual cue */
 	position: absolute;
 	background-color: var(--base);
 	top: 50%;
@@ -110,7 +112,7 @@ overflow: hidden;
 
 
 .over{
-	outline: 1px solid red;
+/*	outline: 1px solid red;*/
 	mix-blend-mode: difference;
 	 position: relative;
   z-index: 2;
@@ -171,15 +173,11 @@ overflow: hidden;
 	flex: 0 0 auto;
 }
 .logo img{
+
 	height: 40px;
 	width: auto;
 }
 
-.logo span{
-	color: white;
-	font-size: 1.5rem;
-	font-weight: bold;
-}
 
 
 
@@ -271,17 +269,12 @@ overflow: hidden;
   z-index: 2;
   animation: push-up 1.8s ease-out forwards
 }
-.mid p:nth-child(1) {
-  animation-delay: 0.3s;
-}
-.mid p:nth-child(2) {
-  animation-delay: 0.6s;
-}
+ 
 
  .letra1, .letra2 {
  	font-size: 2rem;
 	color: white;
-	margin-bottom: px;
+	margin-bottom: 1px;
 	z-index: 2;
 }
 .letra1, .letra2, .btn3{
