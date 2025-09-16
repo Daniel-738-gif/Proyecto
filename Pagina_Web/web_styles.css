@@ -63,11 +63,12 @@ main {
 position: relative;
 height: 100vh;
 overflow: hidden;
+background-color: var(--base);
 }
 
 .bgr-vid video{
 	animation: fadeCrop 1s ease-in-out 5s forwards;
-  border: 5px solid red; /* temporary visual cue */
+  
 	position: absolute;
 	background-color: var(--base);
 	top: 50%;
@@ -81,7 +82,7 @@ overflow: hidden;
 	animation: fadeCrop 1s ease-in-out 5s forwards;
 
 }
-/* Optional: gradient overlay for smoother fade */
+
 .bgr-vid::after {
   content: "";
   position: absolute;
