@@ -80,101 +80,15 @@ overflow: hidden;
 	outline: 2px solid blue;
 	animation: fadeCrop 2s ease-in-out 1s forwards;
 }
-.bgr-vid.hero {
+.bgr-vid {
   position: relative;
   height: 100vh;
   overflow: hidden;
-  background-color: var(--base);
-  display: grid;
-  place-items: center;
-}
-.hero-visual {
-  position: absolute;
-  inset: 0;
-  z-index: -1;
-  background-color: black;
-  overflow: clip;
-  animation: animate-ratio 3s linear 5s forwards;
-}
-
-.hero-visual-wrapper {
-  width: 100%;
-  height: 100%;
-  animation: push-up 5s ease-in-out 10s forwards;
-}
-
-.hero-video {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-.hero-header {
-  display: grid;
-  gap: var(--space-lg);
-}
-
-.hero-content {
-  z-index: 2;
-  text-align: center;
-  padding: var(--space-md);
+  
   display: grid;
   place-items: center;
 }
 
-.bgr-vid::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 30vh;
-  background-color: var(--base);
-  background: linear-gradient(to bottom, rgba(0,0,0,0), var(--base));
-  z-index: 0;
-  pointer-events: none;
-  animation: fadeOverlay 2s ease-in-out 5s forwards;
-}
-@keyframes fadeCrop {
-  from {
-    clip-path: inset(0 0);
-    opacity: 1;
-  }
-  to {
-    clip-path: inset(120px 0 50px 0);
-    opacity: 0;
-  }
-}
-
-
-@keyframes fadeOverlay {
-  from { opacity: 1; }
-  to { opacity: 0; }
-}
-
-/* Fade-out crop animation */
-@keyframes animate-ratio {
-  from {
-    aspect-ratio: 16/9;
-    clip-path: inset(0 0);
-  }
-  to {
-    aspect-ratio: 2.5/6;
-    clip-path: inset(120px 0 50px 0);
-    padding-block-start: 120px;
-    padding-block-end: 50px;
-  }
-}
-
-/* Text push-up animation */
-@keyframes push-up {
-  10%, 90% {
-    transform: translateY(-100%);
-  }
-  100% {
-    transform: translateY(-200%);
-  }
-}
 
 .over{
 /*	outline: 1px solid red;*/
@@ -186,13 +100,13 @@ overflow: hidden;
   text-align: center;
 
 }
-
+/*
 .reveal {
   background-color: var(--fondo1);
   color: var(--letras);
   padding: 50px;
   text-align: center;
-} 	
+} 	*/
 
 
 
