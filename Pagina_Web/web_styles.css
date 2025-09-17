@@ -63,7 +63,7 @@ main {
 position: relative;
 height: 100vh;
 overflow: hidden;
-background-color: var(--base);
+
 }
 
 .bgr-vid video{
@@ -78,8 +78,48 @@ background-color: var(--base);
 	object-fit: cover;
 	z-index: -1;
 	outline: 2px solid blue;
-	animation: fadeCrop 2s ease-in-out 5s forwards;
+	animation: fadeCrop 2s ease-in-out 1s forwards;
+}
+.bgr-vid.hero {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  background-color: var(--base);
+  display: grid;
+  place-items: center;
+}
+.hero-visual {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background-color: black;
+  overflow: clip;
+  animation: animate-ratio 3s linear 5s forwards;
+}
 
+.hero-visual-wrapper {
+  width: 100%;
+  height: 100%;
+  animation: push-up 5s ease-in-out 10s forwards;
+}
+
+.hero-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.hero-header {
+  display: grid;
+  gap: var(--space-lg);
+}
+
+.hero-content {
+  z-index: 2;
+  text-align: center;
+  padding: var(--space-md);
+  display: grid;
+  place-items: center;
 }
 
 .bgr-vid::after {
@@ -89,6 +129,7 @@ background-color: var(--base);
   left: 0;
   width: 100%;
   height: 30vh;
+  background-color: var(--base);
   background: linear-gradient(to bottom, rgba(0,0,0,0), var(--base));
   z-index: 0;
   pointer-events: none;
@@ -111,12 +152,38 @@ background-color: var(--base);
   to { opacity: 0; }
 }
 
+/* Fade-out crop animation */
+@keyframes animate-ratio {
+  from {
+    aspect-ratio: 16/9;
+    clip-path: inset(0 0);
+  }
+  to {
+    aspect-ratio: 2.5/6;
+    clip-path: inset(120px 0 50px 0);
+    padding-block-start: 120px;
+    padding-block-end: 50px;
+  }
+}
+
+/* Text push-up animation */
+@keyframes push-up {
+  10%, 90% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(-200%);
+  }
+}
+
 .over{
 /*	outline: 1px solid red;*/
-  position: relative;
-	mix-blend-mode: difference;
-	color: white; 
+ position: relative;
+  z-index: 2;
+  mix-blend-mode: difference;
+  color: white;
   padding-top: 20vh;
+  text-align: center;
 
 }
 
@@ -125,7 +192,7 @@ background-color: var(--base);
   color: var(--letras);
   padding: 50px;
   text-align: center;
-}
+} 	
 
 
 
