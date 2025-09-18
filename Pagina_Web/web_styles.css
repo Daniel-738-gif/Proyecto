@@ -78,17 +78,29 @@ overflow: hidden;
 	object-fit: cover;
 	z-index: -1;
 	outline: 2px solid blue;
-	animation: fadeCrop 2s ease-in-out 1s forwards;
+	
 }
 .bgr-vid {
   position: relative;
   height: 100vh;
   overflow: hidden;
-  
+  animation: animate-ratio 3s linear 5s forwards;
   display: grid;
   place-items: center;
 }
 
+@keyframes animate-ratio {
+  from {
+    aspect-ratio: 16/9;
+    clip-path: inset(0 0);
+  }
+  to {
+    aspect-ratio: 2.5/6;
+    clip-path: inset(120px 0 50px 0);
+    padding-block-start: 120px;
+    padding-block-end: 50px;
+  }
+}
 
 .over{
 /*	outline: 1px solid red;*/
