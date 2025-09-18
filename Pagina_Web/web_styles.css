@@ -20,6 +20,7 @@
 	--borde: #2A2F4D;
 	--a: #D6CFEA;
 	--footer: #2A2F4D;
+	--hero1: #00C70A;
 	/* Or base_modo oscuro 
 	color-scheme: dark;*/
 }
@@ -78,13 +79,16 @@ overflow: hidden;
 	object-fit: cover;
 	z-index: -1;
 	outline: 2px solid blue;
+
 	
 }
 .bgr-vid {
+	display: grid;
   position: relative;
   height: 100vh;
   overflow: hidden;
-  animation: animate-ratio 3s linear 5s forwards;
+  place-items: center;
+  animation: animate-ratio 3s linear 2s forwards;
   display: grid;
   place-items: center;
 }
@@ -92,11 +96,11 @@ overflow: hidden;
 @keyframes animate-ratio {
   from {
     aspect-ratio: 16/9;
-    clip-path: inset(0 0);
+    clip-path: inset(0 0 0 0);		
   }
   to {
     aspect-ratio: 2.5/6;
-    clip-path: inset(120px 0 50px 0);
+    clip-path: inset(0 0 120px 0);
     padding-block-start: 120px;
     padding-block-end: 50px;
   }
@@ -132,6 +136,8 @@ overflow: hidden;
 
 
 .nav{
+	font-size: 1.3rem;
+
 	display: flex;
   align-items: center;
   position: relative;
@@ -283,7 +289,7 @@ overflow: hidden;
 
 }
 	.letra1{
-		color: #479EEB;
+		color: var(--hero1);
 		font-size: 3rem;
 	}
 
