@@ -86,11 +86,15 @@ overflow: hidden;
 	display: grid;
   position: relative;
   height: 100vh;
-  overflow: hidden;
+  
   place-items: center;
   animation: animate-ratio 3s linear 2s forwards;
   display: grid;
   place-items: center;
+  background-color: black;
+  overflow: clip;
+  outline: 1px solid red;
+  z-index: -1;
 }
 
 @keyframes animate-ratio {
@@ -100,11 +104,30 @@ overflow: hidden;
   }
   to {
     aspect-ratio: 2.5/6;
-    clip-path: inset(0 0 120px 0);
+    clip-path: inset(120px 0 50px 0);
     padding-block-start: 120px;
     padding-block-end: 50px;
   }
 }
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  animation: animate-ratio 3s linear 2s forwards;
+  overflow: hidden;
+}
+
+.video-wrapper video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: relative;
+}
+
+
+
+
+
 
 .over{
 /*	outline: 1px solid red;*/
@@ -254,7 +277,7 @@ overflow: hidden;
 
 /* video en el centro*/
 .mid{
-		
+	
  	 position: relative;
   z-index: 2;
   display: flex;
