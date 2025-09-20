@@ -159,7 +159,7 @@ overflow: hidden;
 
 
 .nav{
-	font-size: 1.3rem;
+	font-size: 1.1rem;
 
 	display: flex;
   align-items: center;
@@ -202,6 +202,7 @@ overflow: hidden;
 .logo img{
 
 	height: 50px;
+  margin-bottom: 10px;
 	width: auto;
 }
 
@@ -226,24 +227,26 @@ overflow: hidden;
 
 .btn {
 	background-color: var(--base);
-	font-size: 1.3rem;
-	border: 1px solid var(--borde);
+	text-align: center;
+	font-size: 1.1rem;
+	border: 2px solid var(--borde);
 	color: var(--letras);
-	width: 130px;
+	width: 120px;
   height: 50px;
-	padding: 1rem 2rem;
+	padding: auto;
 	font-weight: bold;
 	cursor: pointer;
 	transition: background-color 0.3s ease;
 	border-radius: 50px;}
 	
 .btn2 {
-	font-size: 1.2rem;
+	font-size: 1.3rem;
 	background-color: var(--btn);
 	color: var(--letras);
-	width: 130px;
+	width: 120px;
   height: 50px;
-	padding: 0.5rem 1rem;
+  border: none;
+	padding: auto; 1rem;
 	font-weight: bold;
 	cursor: pointer;
 	transition: background-color 0.3s ease;
