@@ -75,6 +75,8 @@ main {
 
 .bgr-vid {
 	
+	margin-right: auto;
+  margin-left: 30px;
   position: relative;
    width: 100vw;
   height: 100vh;
@@ -100,6 +102,7 @@ main {
   }
 }*/
 .video-wrapper {
+	margin: auto;
 	display: flex;
   position: relative;
   margin: 0;
