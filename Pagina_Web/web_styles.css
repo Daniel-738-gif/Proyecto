@@ -52,7 +52,7 @@ header{
 
 main {
 	flex: 1;
-	outline: 4px solid red;
+	outline: 4px solid black;
 
 }
 
@@ -75,17 +75,12 @@ main {
 
 .bgr-vid {
 	
-	margin-right: auto;
-  margin-left: 30px;
+	margin-right: 3px;
+  margin-left:3px;
   position: relative;
-   width: 100vw;
-  height: 100vh;
-  place-items: center;
-  display: grid;
-  place-items: center;
-  
   overflow: hidden;
-  outline: 4px solid red;
+  place-items: center;
+  outline: 4px solid darkcyan;
   z-index: 1;
 }
 /*
@@ -102,29 +97,24 @@ main {
   }
 }*/
 .video-wrapper {
-	margin: auto;
-	display: flex;
-  position: relative;
-  margin: 0;
-  width: 50%;
-  height: 50%;
-  background: cover;
+
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
   animation: ani 3s linear 2s forwards;
-  overflow: hidden;
+ 	background-size: cover;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  transform-origin: center center ;
+  object-fit: cover;
   outline: 8px solid yellow};
  
 
 
 .video-wrapper video {
  inline-size: 100%;
-    block-size: 100%;
-    display: block;
-    object-fit: cover;
-  outline: 40px solid green;
+ block-size: 100%;
+ display: block;
+ outline: 40px solid green;
 }
 
 
@@ -140,7 +130,7 @@ main {
   color: white;
   padding-top: 20vh;
   text-align: center;
-  outline: 4px solid red;
+  outline: 4px solid orange;
 }
 /*
 .reveal {
@@ -231,8 +221,8 @@ main {
 .btn {
 	background-color: var(--base);
 	text-align: center;
-	font-size: 1.1rem;
-	border: 2px solid var(--borde);
+	font-size: 1rem;
+	border: 2px solid var(--a);
 	color: var(--letras);
 	width: 120px;
   height: 50px;
