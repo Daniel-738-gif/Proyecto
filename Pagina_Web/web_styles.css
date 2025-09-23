@@ -32,6 +32,7 @@ html, body {
  	 margin: 0;
   padding: 0;
   height: 100%;
+  background-color: var(--base);
 }
 
 
@@ -76,36 +77,38 @@ main {
 
 
 @keyframes ani {
-  from {
-    aspect-ratio: 16/9;
+  0% {
     clip-path: inset(0 0 0 0);
-
+    aspect-ratio: 16/9;
+    transform: translate(-50%, -50%) scale(1);
   }
-  to {
-    aspect-ratio: 2.5/6;
-    clip-path: inset(120px 0 50px 0);
-  
+  100% {
+    clip-path: inset(10% 38% 10% 38%);
+    aspect-ratio: 2/5;
+    transform: translate(-50%, -50%) scale(1);
+    
   }
 }
 .video-wrapper {
-
-  position: relative;
+ position: absolute;
+  top: 60%;
+  left: 50%;
   width: 100vw;
   height: 100vh;
-  animation: ani 3s ease-in-out 2s forwards;
+  transform: translate(-50%, -50%);
+  animation: ani 3s ease-in-out 1s forwards;
   overflow: hidden;
-  outline: 8px solid yellow;
-  object-fit: cover;
+   background-color: transparent;
+
 }
  
 
 
 .video-wrapper video {
- width: 100%;
+   width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
- outline: 40px solid green;
 }
 
 
@@ -123,19 +126,6 @@ main {
   text-align: center;
   outline: 4px solid orange;
 }
-/*
-.reveal {
-  background-color: var(--fondo1);
-  color: var(--letras);
-  padding: 50px;
-  text-align: center;		
-} 	*/
-
-
-
-
-
-
 
 
 
@@ -306,7 +296,8 @@ main {
 
 
 
-.loop {display: none;
+.loop {
+
 	z-index: -1;
 	position: absolute;
 	
@@ -378,6 +369,7 @@ main {
 /*pie de pagina*/
 
 footer{
+	margin-top: 500px;
 	color: var(--letras	);
   padding: 1rem;
   text-align: center;
