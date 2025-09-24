@@ -27,7 +27,9 @@
 
 
 html, body {
-
+	
+  display: flex;
+  flex-direction: column;
   
  	 margin: 0;
   padding: 0;
@@ -44,6 +46,14 @@ body {
   
   font-style: normal; /* Or 'italic' */
 }
+main {
+	min-height: 100vh;
+
+	flex: 1;
+	outline: 4px solid black;
+
+}
+
 
 header{
 	padding: 10px;
@@ -51,11 +61,6 @@ header{
 	
 }
 
-main {
-	flex: 1;
-	outline: 4px solid black;
-
-}
 
 
 
@@ -86,6 +91,7 @@ main {
   animation: ani 3s ease-in-out 1s forwards;
   overflow: hidden;
    background-color: transparent;
+  z-index: 10;
 
 }
  
@@ -373,7 +379,7 @@ max-width: 700px;
 /*pie de pagina*/
 
 footer{
-	margin-top: 500px;
+
 	color: var(--letras	);
   padding: 1rem;
   text-align: center;
