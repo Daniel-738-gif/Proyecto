@@ -58,21 +58,8 @@ main {
 }
 
 
-/*	outline: 1px solid red;
-.bgr-vid video{
 
-	position: absolute;
 
-	top: 50%;
-	left: 50%;
-	min-width: 100%;
-	min-height: 100%;
-	transform: translate(-50%,-50%);
-	object-fit: cover;
-	z-index: -1;
-	outline: 2px solid blue;
-}
-*/
 
 
 
@@ -210,7 +197,7 @@ main {
 	
 	font-weight: bold;
 	cursor: pointer;
-	transition: background-color 0.3s ease;
+
 	border-radius: 50px;}
 	
 .btn2 {
@@ -223,7 +210,7 @@ main {
 
 	font-weight: bold;
 	cursor: pointer;
-	transition: background-color 0.3s ease;
+	
 	border-radius: 50px;
 }
 .btn3 {
@@ -236,7 +223,7 @@ main {
 	padding: 0.5rem 1rem;
 	font-weight: bold;
 	cursor: pointer;
-	transition: background-color 0.3s ease;
+	
 	border-radius: 50px;
 	z-index: 2;
 
@@ -256,7 +243,7 @@ main {
 /* video en el centro*/
 .mid{
 	
- 	 position: relative;
+ 	position: relative;
   z-index: 2;
   display: flex;
   flex-direction: column;
@@ -264,8 +251,40 @@ main {
   align-items: center;
   height: 100%;
   text-align: center;
+  z-index: 2;
+  outline-color: 1px absolute red;
 }
-  
+/*
+  .bgr-vid video{
+
+	position: absolute;
+
+	top: 50%;
+	left: 50%;
+	min-width: 100%;
+	min-height: 100%;
+	transform: translate(-50%,-50%);
+	object-fit: cover;
+	z-index: 2;
+	outline: 2px solid blue;
+}*/
+.loop {
+
+	z-index: 2;
+	position: absolute;
+	align-items: center;
+	transform: translate(-50%,-50%);
+	width: 70px;
+	height: 45px;
+	top: 50%;
+	left: 50%;
+	object-fit: cover;
+	
+
+	transform: translate(-50%, -50%);
+	
+	}
+ 
  
   
 
@@ -296,21 +315,7 @@ main {
 
 
 
-.loop {
 
-	z-index: -1;
-	position: absolute;
-	
-	width: 700px;
-	height: 450px;
-	top: 62%;
-	left: 50%;
-	object-fit: cover;
-	
-
-	transform: translate(-50%, -50%);
-	
-	}
 
 
 
