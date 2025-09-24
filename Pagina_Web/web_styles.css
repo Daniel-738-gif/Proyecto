@@ -103,16 +103,6 @@ main {
 
 
 
-.over{
-/*	outline: 1px solid red;*/
-  position: relative;
-  z-index: 2;
-  mix-blend-mode: difference;
-  color: white;
-  padding-top: 20vh;
-  text-align: center;
-  outline: 4px solid orange;
-}
 
 
 
@@ -242,18 +232,29 @@ main {
 
 /* video en el centro*/
 .mid{
-	
+	display: flex;
  	position: relative;
   z-index: 2;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+   justify-content: center;
   align-items: center;
-  height: 100%;
+
   text-align: center;
-  z-index: 2;
-  outline-color: 1px absolute red;
+  top: 100px;
+  
+  
 }
+/*letras video en el centro*/
+.over{
+/*	outline: 1px solid red;*/
+  position: relative;
+  z-index: 4;
+  mix-blend-mode: difference;
+  color: white;
+  padding-top: 20vh;
+  text-align: center;
+  outline: 4px solid orange;
+}
+
 /*
   .bgr-vid video{
 
@@ -268,20 +269,18 @@ main {
 	z-index: 2;
 	outline: 2px solid blue;
 }*/
-.loop {
 
-	z-index: 2;
-	position: absolute;
-	align-items: center;
-	transform: translate(-50%,-50%);
-	width: 70px;
-	height: 45px;
-	top: 50%;
-	left: 50%;
-	object-fit: cover;
+
+.mid video {
+outline: 2px solid blue;
+	position: absolute	;
 	
-
-	transform: translate(-50%, -50%);
+	transform: translate(-50%,-50%);
+	width: 90vw;
+max-width: 700px;
+	height: auto;
+	top: 62%;
+	left: 50%;
 	
 	}
  
