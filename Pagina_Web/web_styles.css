@@ -91,7 +91,7 @@ header{
 
 @keyframes push-up {
   10%, 90% {
-    transform: translateY(-100%);
+    transform: translate(-50%, -150%);
   }
 
   100% {
@@ -109,9 +109,8 @@ header{
   height: 100vh;
   transform: translate(-50%, -50%);
   animation: ani 2s ease-in-out 1s forwards, push-up 5s 6s forwards;
-
+  animation-fill-mode: forwards;
   overflow: hidden;
-
   z-index: 10;
   
 
