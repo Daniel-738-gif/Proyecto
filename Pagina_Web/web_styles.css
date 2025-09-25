@@ -81,7 +81,26 @@ header{
     transform: translate(-50%, -50%) scale(1);
     
   }
+
+
 }
+
+
+
+
+
+@keyframes push-up {
+  10%, 90% {
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateY(-200%);
+  }
+}
+
+
+
 .video-wrapper {
  position: absolute;
   top: 60%;
@@ -89,9 +108,10 @@ header{
   width: 100vw;
   height: 100vh;
   transform: translate(-50%, -50%);
-  animation: ani 3s ease-in-out 1s forwards;
+  animation: ani 2s ease-in-out 1s forwards, push-up 5s 6s forwards;
+
   overflow: hidden;
-  
+
   z-index: 10;
   
 
