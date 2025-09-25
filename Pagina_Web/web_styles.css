@@ -76,7 +76,7 @@ header{
   }
   100% {
   	/*inset(top right bottom left);*/
-    clip-path: inset(20% 20% 20% 20%);
+    clip-path: inset(18% 24% 20% 24%);
     aspect-ratio: 2/5;
     transform: translate(-50%, -50%) scale(1);
     
@@ -91,9 +91,9 @@ header{
   transform: translate(-50%, -50%);
   animation: ani 3s ease-in-out 1s forwards;
   overflow: hidden;
-   background-color: transparent;
+  
   z-index: 10;
-  opacity: 0.4;
+  
 
 }
  
