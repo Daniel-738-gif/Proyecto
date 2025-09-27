@@ -279,7 +279,7 @@ header{
   color: white;
   padding-top: 20vh;
   text-align: center;
-  outline: 4px solid orange;
+  font-weight: bold;
 }
 
 /*
@@ -299,6 +299,7 @@ header{
 
 
 .mid video {
+	display: none
 outline: 2px solid blue;
 	position: absolute	;
 	
@@ -328,6 +329,7 @@ max-width: 700px;
 	color: white;
 	margin-bottom: 1px;
 	z-index: 2;
+	padding: auto;
 }
 .letra1, .letra2, .btn3{
   
