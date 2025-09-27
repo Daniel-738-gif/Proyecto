@@ -299,13 +299,13 @@ header{
 
 
 .mid video {
-	display: none
-outline: 2px solid blue;
+	
+	outline: 2px solid blue;
 	position: absolute	;
 	
 	transform: translate(-50%,-50%);
 	width: 90vw;
-max-width: 700px;
+	max-width: 700px;
 	height: auto;
 	top: 62%;
 	left: 50%;
@@ -327,7 +327,7 @@ max-width: 700px;
  .letra1, .letra2 {
  	font-size: 2rem;
 	color: white;
-	margin-bottom: 1px;
+	margin-bottom: 2px;
 	z-index: 2;
 	padding: auto;
 }
