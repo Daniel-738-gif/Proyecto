@@ -111,7 +111,7 @@ header{
   animation: ani 2s ease-in-out 1s forwards, push-up 5s 6s forwards;
   animation-fill-mode: forwards;
   overflow: hidden;
-  z-index: 10;
+  z-index: 3;
   
 
 }
@@ -194,7 +194,7 @@ header{
 /* btn*/
 
 .nav_botones{
-
+	
 	flex: 0 0 auto;
 	display: flex;
 	gap: 10px;
@@ -210,24 +210,23 @@ header{
 	border: 2px solid var(--a);
 	color: var(--letras);
 	width: 120px;
-  height: 50px;
-	
+    height: 50px;
 	font-weight: bold;
 	cursor: pointer;
-
-	border-radius: 50px;}
+	border-radius: 50px;
+	
+	
+}
 	
 .btn2 {
 	font-size: 1.3rem;
 	background-color: var(--btn);
 	color: var(--letras);
 	width: 120px;
-  height: 50px;
-  border: none;
-
+    height: 50px;
+    border: none;
 	font-weight: bold;
 	cursor: pointer;
-	
 	border-radius: 50px;
 }
 .btn3 {
@@ -236,21 +235,24 @@ header{
 	border: none;
 	color: var(--letras);
 	width: 130px;
-  height: 50px;
+    height: 50px;
 	padding: 0.5rem 1rem;
 	font-weight: bold;
 	cursor: pointer;
-	
 	border-radius: 50px;
-	z-index: 2;
+	transform: scale(1);
 
 
 }
 
 
-	.btn:hover{
+	.btn:hover,
+	.btn2:hover,
+	.btn3:hover {
 		background-color: var(--btn);
-	} 
+		transform: scale(1.05);
+		transition: background-color 0.3s ease;
+	}
 
 
 
@@ -260,13 +262,12 @@ header{
 /* video en el centro*/
 .mid{
 	display: flex;
- 	position: relative;
-  z-index: 2;
-   justify-content: center;
-  align-items: center;
-
-  text-align: center;
-  top: 100px;
+	position: relative;
+	z-index: 2;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	top: 100px;
   
   
 }
@@ -274,12 +275,12 @@ header{
 .over{
 /*	outline: 1px solid red;*/
   position: relative;
-  z-index: 4;
   mix-blend-mode: difference;
   color: white;
   padding-top: 20vh;
   text-align: center;
   font-weight: bold;
+  z-index: 10;
 }
 
 /*
@@ -300,40 +301,26 @@ header{
 
 .mid video {
 	
-	outline: 2px solid blue;
+	/*outline: 2px solid blue;*/
 	position: absolute	;
-	
 	transform: translate(-50%,-50%);
 	width: 90vw;
 	max-width: 700px;
 	height: auto;
 	top: 62%;
 	left: 50%;
-	
+	animation: push-up 1s 10s forwards;
 	}
  
- 
-  
 
-.mid p {
-	
-
-	 position: relative;
-  z-index: 2;
-  animation: push-up 1.8s ease-out forwards
-}
- 
 
  .letra1, .letra2 {
  	font-size: 2rem;
-	color: white;
-	margin-bottom: 2px;
-	z-index: 2;
-	padding: auto;
+	
 }
 .letra1, .letra2, .btn3{
-  
-	margin-bottom: 10px;
+  	margin-bottom: 30px;
+	z-index: 3;
 
 }
 	.letra1{
