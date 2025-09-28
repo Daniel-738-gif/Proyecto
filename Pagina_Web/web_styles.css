@@ -1,8 +1,8 @@
 
 *{
 	margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  	padding: 0;
+  	box-sizing: border-box;
 
 	}
 
@@ -28,13 +28,12 @@
 
 html, body {
 	
-  display: flex;
-  flex-direction: column;
-  
- 	 margin: 0;
-  padding: 0;
-  height: 100%;
-  background-color: var(--base);
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	background-color: var(--base);
 }
 
 
@@ -90,12 +89,12 @@ header{
 
 
 @keyframes push-up {
-  10%, 90% {
-    transform: translate(-50%, -150%);
+  10% {
+	transform: translate(-50%, -150%);
   }
 
   100% {
-    transform: translateY(-200%);
+	transform: translate(-50%, -200%);
   }
 }
 
@@ -108,7 +107,7 @@ header{
   width: 100vw;
   height: 100vh;
   transform: translate(-50%, -50%);
-  animation: ani 2s ease-in-out 1s forwards, push-up 5s 6s forwards;
+  animation: ani 3s ease-in-out 2s forwards, push-up 1s 10s forwards;
   animation-fill-mode: forwards;
   overflow: hidden;
   z-index: 3;
@@ -138,12 +137,11 @@ header{
 
 .nav{
 	font-size: 1.1rem;
-
 	display: flex;
-  align-items: center;
-  position: relative;
-  justify-content: space-between;
-  background-color: var(--nav);
+	align-items: center;
+	position: relative;
+	justify-content: space-between;
+	background-color: var(--nav);
   /* 
   padding: 1px 2px;
 	*/
@@ -153,11 +151,11 @@ header{
 .nav1 {
 
 	position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  gap: 50px;
-  list-style: none;
+	left: 50%;
+	transform: translateX(-50%);
+	display: flex;
+	gap: 50px;
+	list-style: none;
 		}
 
 .nav1 a {
@@ -180,7 +178,7 @@ header{
 .logo img{
 
 	height: 50px;
-  margin-bottom: 10px;
+    margin-bottom: 10px;
 	width: auto;
 }
 
@@ -188,10 +186,7 @@ header{
 
 
 
-
-
-
-/* btn*/
+/* botones*/
 
 .nav_botones{
 	
@@ -240,7 +235,7 @@ header{
 	font-weight: bold;
 	cursor: pointer;
 	border-radius: 50px;
-	transform: scale(1);
+	
 
 
 }
@@ -280,7 +275,8 @@ header{
   padding-top: 20vh;
   text-align: center;
   font-weight: bold;
-  z-index: 10;
+  
+
 }
 
 /*
@@ -307,10 +303,10 @@ header{
 	width: 90vw;
 	max-width: 700px;
 	height: auto;
-	top: 62%;
+	top: 52%;
 	left: 50%;
-	animation: push-up 1s 10s forwards;
-	}
+	animation: push-up 1s 15s forwards;
+}
  
 
 
@@ -320,7 +316,7 @@ header{
 }
 .letra1, .letra2, .btn3{
   	margin-bottom: 30px;
-	z-index: 3;
+	
 
 }
 	.letra1{
@@ -341,14 +337,14 @@ header{
 	background-color: var(--base);
 	color: white;
 	top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 1000;
-  padding: 20px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 1000;
+	padding: 20px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.3);
 	transition: opacity 0.3s ease;
 	border: 10px solid var(--fondo1);
-  border-collapse: collapse;
+	border-collapse: collapse;
 
 }
 .tabla table, th, td{
@@ -379,20 +375,13 @@ header{
 
 
 
-
-
-
-
-
-
-
 /*pie de pagina*/
 
 footer{
 
 	color: var(--letras	);
-  padding: 1rem;
-  text-align: center;
+    padding: 1rem;
+    text-align: center;
 	padding: 10px;
 	background-color: var(--footer)	;
 }
