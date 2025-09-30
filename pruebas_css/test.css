@@ -13,6 +13,7 @@
     left: calc(50% - 100px);
     transform-style: preserve-3d;
     transform: perspective(1000px);
+    animation: autoRun 20s linear infinite;
 }
 
 .banner .slider .item {
@@ -21,7 +22,7 @@
     transform: 
         rotateY(calc( (var(--position) - 1) * (360 / var(--quantity)) * 1deg))
         translateZ(550px);
-        animation: autoRun 20s linear infinite;
+        
 }
 
 @keyframes autoRun {
