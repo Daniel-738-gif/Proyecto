@@ -1,6 +1,31 @@
-@import url('https://fonts.cdnfonts.com/css/ica-rubylic-black');
+@import url('https://fonts.cdnfonts.com/css/ica-rubrik-black');
 @import url('https://fonts.cdnfonts.com/css/Poppins');
 
+body{
+    position: relative;
+    margin: 0;
+ }
+
+body::before {
+    background-image: url('img/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    content: "";
+    position: fixed;
+    inset: 0;
+    opacity: 0.6;
+    z-index: -2;
+
+}
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-color: rgba(230, 242, 176, 0.4);
+  z-index: -1;
+}
 
 .banner {
     width: 100%;
@@ -18,6 +43,7 @@
     transform-style: preserve-3d;
     transform: perspective(1000px);
     animation: autoRun 20s linear infinite;
+    z-index: 2;
 }
 
 .banner .slider .item {
@@ -42,8 +68,8 @@
 
 
 .banner .slider .item img {
-    width: 70%;
-    height: 70%;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
   
 }
@@ -55,21 +81,31 @@
      transform: translateX(-50%);
      width: min(1400px, 100vw);
      height: max-content;
-     padding-bottom: 100px;
+     padding-bottom: 40px;
      display: flex;
      flex-wrap: wrap;
      justify-content: space-between;
      align-items: center;
+     z-index: 1;
 }
 
 .banner .content h1 {
     font-family: 'ICA Rubrik';
-    font-size: 16em;
+    font-size: 14em;
     line-height: 1em;
     color: #25283B;
+    position: relative;
 }
+.banner .content h1::after{
+    position: absolute;
+    inset: 0 0 0 0;
+    content: attr(data-content);
+    z-index: 2;
+    -webkit-text-stroke: 2px #d2d2d2;
+    color: transparent;
+} 
 .banner .content .author {
-    font-family: Poppins;
+    font-family: 'Poppins' ;
     text-align: right;
     max-width: 200px;
 }
@@ -79,13 +115,15 @@
 }
 
 .banner .content .model {
-    background-image: url('path/to/your/image.jpg');
+    background-image: url('img/bg_cat.png');
     width: 100%;
-    height: 75vh;
+    height: 100vh;
     position: absolute;
     bottom: 0;
-    left: 0;    
-    background-size: auto 130%;
+    left: 50%;    
+    transform: translateX(-45%);
+    background-size: auto 100%;
     background-repeat: no-repeat;
     background-position: top center; 
+    z-index: 1;
 }
