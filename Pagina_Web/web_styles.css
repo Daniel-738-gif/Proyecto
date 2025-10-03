@@ -296,8 +296,7 @@ header{
 }*/
 
 
-.mid video {
-	
+.mid .video1 video {
 	/*outline: 2px solid blue;*/
 	position: absolute	;
 	transform: translate(-50%,-50%);
