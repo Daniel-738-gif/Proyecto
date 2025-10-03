@@ -115,22 +115,12 @@ header{
 
 }
  
-
-
 .video-wrapper video {
    width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
 }
-
-
-
-
-
-
-
-
 
 
 
@@ -250,22 +240,6 @@ header{
 	}
 
 
-
-
-
-
-/* video en el centro*/
-.mid{
-	display: flex;
-	position: relative;
-	
-	justify-content: center;
-	align-items: center;
-	text-align: center;
-	top: 100px;
-  
-  
-}
 /*letras video en el centro*/
 .over{
 /*	outline: 1px solid red;*/
@@ -276,41 +250,40 @@ header{
   text-align: center;
   font-weight: bold;
   z-index: 3;
-
-
 }
 
-/*
-  .bgr-vid video{
-
-	position: absolute;
-
-	top: 50%;
-	left: 50%;
-	min-width: 100%;
-	min-height: 100%;
-	transform: translate(-50%,-50%);
-	object-fit: cover;
-	z-index: 2;
-	outline: 2px solid blue;
-}*/
-
-
-.mid .video1 video {
+.mid{
+	display: flex;
+	position: relative;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	top: 100px;
+  
+  
+}
+.mid video {
 	/*outline: 2px solid blue;*/
-	position: absolute	;
+	display: none;
+	position: absolute;
 	transform: translate(-50%,-50%);
 	width: 90vw;
 	max-width: 700px;
 	height: auto;
 	top: 52%;
 	left: 50%;
-	animation: push-up 1s 15s forwards;
 	z-index: 2;
 }
- 
 
-
+.loop1 {
+	animation: push-up 1s 15s forwards;
+}
+.loop2 {
+	animation: push-up 1s 16s forwards;
+}
+.loop3 {
+	animation: push-up 1s 17s forwards;
+}
  .letra1, .letra2 {
  	font-size: 2rem;
 	
