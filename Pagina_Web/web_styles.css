@@ -89,12 +89,17 @@ header{
 
 
 @keyframes push-up {
-  10% {
-	transform: translate(-50%, -150%);
+  0% {
+    transform: translate(-50%, -50%);
+    opacity: 0;
   }
-
+  10% {
+    transform: translate(-50%, -150%);
+    opacity: 1;
+  }
   100% {
-	transform: translate(-50%, -200%);
+    transform: translate(-50%, -200%);
+    opacity: 0;
   }
 }
 
@@ -264,7 +269,7 @@ header{
 }
 .mid video {
 	/*outline: 2px solid blue;*/
-	display: none;
+	
 	position: absolute;
 	transform: translate(-50%,-50%);
 	width: 90vw;
@@ -273,17 +278,22 @@ header{
 	top: 52%;
 	left: 50%;
 	z-index: 2;
+	opacity: 0;
+	animation-fill-mode: forwards;
 }
 
 .loop1 {
-	animation: push-up 1s 15s forwards;
+  animation: push-up 2s ease-in-out 15s forwards;
 }
 .loop2 {
-	animation: push-up 1s 16s forwards;
+  animation: push-up 2s ease-in-out 17s forwards;
 }
 .loop3 {
-	animation: push-up 1s 17s forwards;
+  animation: push-up 2s ease-in-out 19s forwards;
 }
+
+
+
  .letra1, .letra2 {
  	font-size: 2rem;
 	
