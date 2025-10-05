@@ -94,6 +94,10 @@ header{
     transform: translate(-50%, -150%);
     opacity: 1;
   }
+  30% {
+    transform: translate(-50%, -170%);
+    
+  }
   100% {
     transform: translate(-50%, -250%);
     opacity: 0;
@@ -107,9 +111,9 @@ header{
   top: 60%;
   left: 50%;
   width: 100vw;
-  height: 100vh;
+  height: 120vh;
   transform: translate(-50%, -50%);
-  animation: ani 3s ease-in-out 2s forwards, push-up 2s 10s forwards;
+  animation: ani 3s ease-in-out 5s forwards, push-up 2s 10s forwards;
   animation-fill-mode: forwards;
   overflow: hidden;
   z-index: 9;
