@@ -91,15 +91,15 @@ header{
 @keyframes push-up {
   0% {
     transform: translate(-50%, -50%);
-    opacity: 0;
+    
   }
   10% {
     transform: translate(-50%, -150%);
-    opacity: 1;
+   
   }
   100% {
     transform: translate(-50%, -200%);
-    opacity: 0;
+
   }
 }
 
@@ -126,6 +126,73 @@ header{
   object-fit: cover;
   display: block;
 }
+
+
+
+/*letras video en el centro*/
+.over{
+/*	outline: 1px solid red;*/
+  position: relative;
+  mix-blend-mode: difference;
+  color: white;
+  padding-top: 20vh;
+  text-align: center;
+  font-weight: bold;
+  z-index: 3;
+}
+
+.mid{
+	display: flex;
+	position: relative;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	top: 100px;
+  
+  
+}
+.mid video {
+	/*outline: 2px solid blue;*/
+	
+	position: absolute;
+	transform: translate(-50%,-50%);
+	width: 90vw;
+	max-width: 700px;
+	height: auto;
+	top: 52%;
+	left: 50%;
+	z-index: 2;
+
+	animation-fill-mode: forwards;
+}
+
+.loop1 {
+  animation: push-up 2s ease-in-out 15s forwards;
+}
+.loop2 {
+  animation: push-up 2s ease-in-out 17s forwards;
+}
+.loop3 {
+  animation: push-up 2s ease-in-out 19s forwards;
+}
+
+
+
+ .letra1, .letra2 {
+ 	font-size: 2rem;
+	
+}
+.letra1, .letra2, .btn3{
+  	margin-bottom: 30px;
+	
+
+}
+	.letra1{
+		color: var(--hero1);
+		font-size: 3rem;
+	}
+
+
 
 
 
@@ -244,69 +311,6 @@ header{
 		transition: background-color 0.3s ease;
 	}
 
-
-/*letras video en el centro*/
-.over{
-/*	outline: 1px solid red;*/
-  position: relative;
-  mix-blend-mode: difference;
-  color: white;
-  padding-top: 20vh;
-  text-align: center;
-  font-weight: bold;
-  z-index: 3;
-}
-
-.mid{
-	display: flex;
-	position: relative;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
-	top: 100px;
-  
-  
-}
-.mid video {
-	/*outline: 2px solid blue;*/
-	
-	position: absolute;
-	transform: translate(-50%,-50%);
-	width: 90vw;
-	max-width: 700px;
-	height: auto;
-	top: 52%;
-	left: 50%;
-	z-index: 2;
-	opacity: 0;
-	animation-fill-mode: forwards;
-}
-
-.loop1 {
-  animation: push-up 2s ease-in-out 15s forwards;
-}
-.loop2 {
-  animation: push-up 2s ease-in-out 17s forwards;
-}
-.loop3 {
-  animation: push-up 2s ease-in-out 19s forwards;
-}
-
-
-
- .letra1, .letra2 {
- 	font-size: 2rem;
-	
-}
-.letra1, .letra2, .btn3{
-  	margin-bottom: 30px;
-	
-
-}
-	.letra1{
-		color: var(--hero1);
-		font-size: 3rem;
-	}
 
 
 
