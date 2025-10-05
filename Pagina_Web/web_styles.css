@@ -33,30 +33,41 @@ html, body {
 	margin: 0;
 	padding: 0;
 	height: 100%;
-	background-color: var(--base);
+	
+	
 }
 
 
 
 body {
-
-	
   font-family: 'Roboto', sans-serif;
-  
-  font-style: normal; /* Or 'italic' */
+   font-style: normal; /* Or 'italic' */
+   background-color: var(--base);	
+   background-image: url(bg.jpg);
+   background-size: cover;
+   background-repeat: repeat;
+   background-blend-mode: multiply;
+   padding: 20px;
+   
 }
+
+
+
+
 main {
 	min-height: 100vh;
 
 	flex: 1;
-	outline: 4px solid black;
+	/*outline: 4px solid black;*/
 
 }
 
 
+
 header{
 	padding: 10px;
-	background-color: var(--nav);
+	
+	
 	
 }
 
@@ -107,6 +118,7 @@ header{
 
 
 .video-wrapper {
+	display: none;
  position: absolute;
   top: 60%;
   left: 50%;
@@ -155,7 +167,7 @@ header{
 }
 .mid video {
 	/*outline: 2px solid blue;*/
-	
+	display: none;
 	position: absolute;
 	transform: translate(-50%,-50%);
 	width: 90vw;
@@ -204,13 +216,13 @@ header{
 
 
 .nav{
+	display: flex;
 	font-size: 1.1rem;
 	display: flex;
 	align-items: center;
 	position: relative;
 	justify-content: space-between;
-	background-color: var(--nav);
-		
+	
   /* 
   padding: 1px 2px;
 	*/
@@ -229,7 +241,7 @@ header{
 
 .nav1 a {
 	text-decoration: none;
-	color: var(--letras)	;
+	color: var(--letras);
 	font-weight: 500;
 	transition: color 0.3 ease;
 }
@@ -377,8 +389,8 @@ footer{
 	color: var(--letras	);
     padding: 1rem;
     text-align: center;
-	padding: 10px;
-	background-color: var(--footer)	;
+	
+	background-blend-mode: soft-light;
 }
 
 
