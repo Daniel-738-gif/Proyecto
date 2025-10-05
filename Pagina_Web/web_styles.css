@@ -8,10 +8,7 @@
 
 :root {
 	font-size: 16px;
-	--fondo1: #342E37; /**/
-	--fondo2: #3B1C32;
-	--fondo3: #6A1E55;
-	--fondo4: #A64D79;
+
 	--footer: #260506;
 	--letras: #B0B0C3;
 	--nav: #202031;
@@ -125,7 +122,7 @@ header{
   width: 100vw;
   height: 120vh;
   transform: translate(-50%, -50%);
-  animation: ani 3s ease-in-out 5s forwards, push-up 2s 10s forwards;
+  animation: ani 3s ease-in-out 5s forwards, push-up 3s ease-out 11s forwards;
   animation-fill-mode: forwards;
   overflow: hidden;
   z-index: 9;
@@ -166,13 +163,12 @@ header{
   
 }
 .mid video {
-	/*outline: 2px solid blue;*/
-	display: none;
+	outline: 2px solid blue;
+	
 	position: absolute;
 	transform: translate(-50%,-50%);
-	width: 90vw;
-	max-width: 700px;
-	height: auto;
+	width: 800px;
+	
 	top: 52%;
 	left: 50%;
 	animation-fill-mode: forwards;
@@ -181,12 +177,12 @@ header{
 .loop1 {
 	
 	z-index: 3;
-  animation: push-up 4s 12s forwards;
+  animation: push-up 4s 14s forwards;
 }
 .loop2 {
 	
 	 z-index: 2;
-  animation: push-up 4s 17s forwards;
+  /*animation: push-up 4s 19s forwards;*/
 }
 .loop3 {
 	
