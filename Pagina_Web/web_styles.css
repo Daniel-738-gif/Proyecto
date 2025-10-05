@@ -162,18 +162,20 @@ header{
 	top: 52%;
 	left: 50%;
 	z-index: 2;
-
 	animation-fill-mode: forwards;
 }
 
 .loop1 {
-  animation: push-up 2s ease-in-out 15s forwards;
+	z-index: 4;
+  animation: push-up 3s ease-in-out 12s forwards;
 }
 .loop2 {
-  animation: push-up 2s ease-in-out 17s forwards;
+	 z-index: 5;
+  animation: push-up 3s ease-in-out 14s forwards;
 }
 .loop3 {
-  animation: push-up 2s ease-in-out 19s forwards;
+	z-index: 6;
+  animation: push-up 3s ease-in-out 16s forwards;
 }
 
 
