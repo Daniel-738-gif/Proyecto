@@ -43,10 +43,10 @@ body {
   font-family: 'Roboto', sans-serif;
    font-style: normal; /* Or 'italic' */
    background-color: var(--base);	
-   background-image: url(bg.jpg);
+   background-image: url(bg3.jpg);
    background-size: cover;
    background-repeat: repeat;
-   background-blend-mode: multiply;
+   background-blend-mode: overlay;
    padding: 20px;
    
 }
@@ -390,7 +390,7 @@ footer{
     padding: 1rem;
     text-align: center;
 	
-	background-blend-mode: soft-light;
+	
 }
 
 
