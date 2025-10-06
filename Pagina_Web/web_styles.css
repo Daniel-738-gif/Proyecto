@@ -115,14 +115,14 @@ header{
 
 
 .video-wrapper {
-	display: none;
+	/*display: none;*/
  position: absolute;
   top: 60%;
   left: 50%;
   width: 100vw;
   height: 120vh;
   transform: translate(-50%, -50%);
-  animation: ani 3s ease-in-out 5s forwards, push-up 3s ease-out 11s forwards;
+  animation: ani 3s ease-in 5s forwards, push-up 3s ease-out 10s forwards;
   animation-fill-mode: forwards;
   overflow: hidden;
   z-index: 9;
@@ -182,7 +182,7 @@ header{
 .loop2 {
 	
 	 z-index: 2;
-  /*animation: push-up 4s 19s forwards;*/
+  animation: push-up 4s 19s forwards;
 }
 .loop3 {
 	
