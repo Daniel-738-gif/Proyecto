@@ -115,7 +115,7 @@ header{
 
 
 .video-wrapper {
-	/*display: none;*/
+	display: none;
  position: absolute;
   top: 60%;
   left: 50%;
@@ -207,7 +207,15 @@ header{
 	}
 
 
-
+.info
+{
+	margin: auto;
+	padding: 220px;
+	color: var(--letras);
+	background-color: rgba(0, 0, 0, 0.6);
+	border-radius: 10px;
+	line-height: 1.6;
+}
 
 
 
