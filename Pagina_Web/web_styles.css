@@ -220,8 +220,7 @@ header{
 	max-width: 800px;
 	top: 100%;
 	position: absolute;
-	animation: ani 3s ease-in 5s forwards, push-up 3s ease-out 10s forwards;
-  	animation-fill-mode: forwards;
+
 }
 
 
