@@ -210,14 +210,18 @@ header{
 .info
 {
 	margin: auto;
-	padding: 220px;
+	padding: 20px;
 	color: var(--letras);
 	background-color: rgba(0, 0, 0, 0.6);
 	border-radius: 10px;
 	line-height: 1.6;
 	font-size: 1.2rem;
-	text-align: center;
+	text-align: justify;
 	max-width: 800px;
+	top: 100%;
+	position: absolute;
+	animation: ani 3s ease-in 5s forwards, push-up 3s ease-out 10s forwards;
+  	animation-fill-mode: forwards;
 }
 
 
