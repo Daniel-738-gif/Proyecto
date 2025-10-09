@@ -209,25 +209,33 @@ header{
 
 .info
 {
-	margin: auto;
-	padding: 20px;
-	color: var(--letras);
-	background-color: rgba(24, 21, 48, 0.6);
-	border-radius: 10px;
-	line-height: 1.6;
-	font-size: 1.2rem;
-	text-align: justify;
-	max-width: 1310px;
-	top: 120%;
-	position: absolute;
+	display: flex;
+  justify-content: space-between;
+  
+  flex-wrap: wrap;
+  margin: auto;
+  padding: 20px;
+  color: var(--letras);
+  background-color: rgba(24, 21, 48, 0.6);
+  border-radius: 10px;
+  line-height: 1.6;
+  font-size: 1.2rem;
+  text-align: left;
+  max-width: 1310px;
+  margin-top: 260px;
+  position: relative;
+  box-sizing: border-box;
 
 }
- .info img{
-	float: right;
-	margin: 0 0 10px 10px;
-	width: 300px;
-	height: auto;
-	border-radius: 10px;
+.text-info{
+	 flex: 1 1 60%;
+  padding-right: 20px;
+}
+ .info-img{
+	flex: 1 1 35%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 10px;
  }
 
 
