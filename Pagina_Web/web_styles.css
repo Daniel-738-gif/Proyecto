@@ -163,12 +163,12 @@ header{
   
 }
 .mid video {
-	outline: 2px solid blue;
+	/*outline: 2px solid blue;*/
 	
 	position: absolute;
 	transform: translate(-50%,-50%);
 	width: 800px;
-	
+	border-radius: 8px;
 	top: 52%;
 	left: 50%;
 	animation-fill-mode: forwards;
@@ -212,17 +212,23 @@ header{
 	margin: auto;
 	padding: 20px;
 	color: var(--letras);
-	background-color: rgba(0, 0, 0, 0.6);
+	background-color: rgba(24, 21, 48, 0.6);
 	border-radius: 10px;
 	line-height: 1.6;
 	font-size: 1.2rem;
 	text-align: justify;
-	max-width: 800px;
-	top: 100%;
+	max-width: 1310px;
+	top: 120%;
 	position: absolute;
 
 }
-
+ .info img{
+	float: right;
+	margin: 0 0 10px 10px;
+	width: 300px;
+	height: auto;
+	border-radius: 10px;
+ }
 
 
 .nav{
@@ -398,11 +404,11 @@ footer{
 	background-color: var(--footer);
 	color: var(--letras	);
     padding: 1rem;
-
+	position: absolute;
 	margin-top: auto;
 	font-size: 0.9rem;
 	text-align: center;
-
+	top: 300%;
 	
 	
 }
