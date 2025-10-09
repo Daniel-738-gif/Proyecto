@@ -9,7 +9,7 @@
 :root {
 	font-size: 16px;
 
-	--footer: #260506;
+	
 	--letras: #B0B0C3;
 	--nav: #202031;
 	--base: #202031;
@@ -209,9 +209,8 @@ header{
 
 .info
 {
-	display: flex;
+  display: flex;
   justify-content: space-between;
-  
   flex-wrap: wrap;
   margin: auto;
   padding: 20px;
