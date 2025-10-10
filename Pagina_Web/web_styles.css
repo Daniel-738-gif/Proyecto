@@ -83,7 +83,7 @@ header{
   }
   100% {
   	/*inset(top right bottom left);*/
-    clip-path: inset(18% 24% 20% 24%);
+    clip-path: inset(20% 18% 20% 18%);
     
     transform: translate(-50%, -50%) scale(1);
     
@@ -115,7 +115,7 @@ header{
 
 
 .video-wrapper {
-	
+	display: none;
  position: absolute;
   top: 60%;
   left: 50%;
@@ -136,7 +136,6 @@ header{
   height: 100%;
   object-fit: cover;
   display: block;
-  mix-blend-mode: multiply;
 }
 
 
@@ -147,7 +146,7 @@ header{
   position: relative;
   mix-blend-mode: difference;
   color: white;
-  padding-top: 20vh;
+  padding-top: 10vh;
   text-align: center;
   font-weight: bold;
   z-index: 10;
@@ -161,6 +160,7 @@ header{
 	align-items: center;
 	text-align: center;
 	top: 100px;
+	height: 50vh;
   
   
 }
@@ -177,17 +177,17 @@ header{
 }
 
 .loop1 {
-	
+	display: none;
 	z-index: 3;
   animation: push-up 4s 14s forwards;
 }
 .loop2 {
-	
-	 z-index: 2;
-  animation: push-up 4s 19s forwards;
+  height: 170%;
+  z-index: 2;
+  /*animation: push-up 4s 19s forwards;*/
 }
 .loop3 {
-	
+	height: 100%;
 	z-index: 1;
   
 }
