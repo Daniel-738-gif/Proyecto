@@ -155,25 +155,24 @@ header{
 .mid{
 	
 	display: flex;
-	position: relative;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
-	top: 100px;
-	height: 50vh;
-  
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  top: 100px;
+  height: 50vh;
+  width: 100%;
+  overflow: hidden;
   
 }
 .mid video {
-	/*outline: 2px solid blue;*/
-	
-	position: absolute;
-	transform: translate(-50%,-50%);
-	width: 800px;
-	border-radius: 8px;
-	top: 52%;
-	left: 50%;
-	animation-fill-mode: forwards;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 800px;
+  border-radius: 8px;
+  animation-fill-mode: forwards;
 }
 
 .loop1 {
@@ -187,7 +186,8 @@ header{
   /*animation: push-up 4s 19s forwards;*/
 }
 .loop3 {
-	height: 100%;
+	
+	
 	z-index: 1;
   
 }
