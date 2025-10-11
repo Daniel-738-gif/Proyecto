@@ -154,15 +154,16 @@ header{
 
 .mid{
 	
-	display: flex;
+display: flex;
   position: relative;
   justify-content: center;
   align-items: center;
   text-align: center;
   top: 100px;
-  height: 50vh;
-  width: 100%;
-  overflow: hidden;
+  width: 10px;
+  height: 30px;
+  
+
   
 }
 .mid video {
@@ -170,7 +171,6 @@ header{
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 800px;
   border-radius: 8px;
   animation-fill-mode: forwards;
 }
@@ -181,7 +181,7 @@ header{
   animation: push-up 4s 14s forwards;
 }
 .loop2 {
-  height: 170%;
+  
   z-index: 2;
   /*animation: push-up 4s 19s forwards;*/
 }
