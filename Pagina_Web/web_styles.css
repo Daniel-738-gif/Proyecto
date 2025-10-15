@@ -458,8 +458,22 @@ header{
 	background-color: var(--base);
 	color: var(--letras);
 }
-
-
+.contacto button{
+	align-self: center;
+	width: 150px;
+	background-color: var(--btn);
+	color: var(--letras);
+	border: none;
+	padding: 10px;
+	font-size: 1.2rem;
+	border-radius: 50px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+.contacto button:hover{
+	background-color: var(--hero1);
+}
+	.
 
 
 
