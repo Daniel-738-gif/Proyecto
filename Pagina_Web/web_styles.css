@@ -392,7 +392,7 @@ header{
 	flex-wrap: wrap;
 	justify-content: center;
 	gap: 20px;
-	margin-top: 20px;
+	margin-top: 200px;
 }
 .card{
 	background-color: rgba(24, 21, 48, 0.6);
@@ -402,6 +402,11 @@ header{
 	width: 300px;
 	transition: transform 0.3s ease;
 	background-color: var(--borde);
+	justify-content: center;
+	color: var(--letras);
+	padding: auto;	
+	margin: auto;
+	
 }
 .card:hover{
 	transform: scale(1.05);
@@ -412,17 +417,16 @@ header{
 	height: 200px;
 	object-fit: cover;
 }
-.card-content{
-	padding: 15px;
-	color: var(--letras);
-}
-.card-content h3{
+
+.card h3{
 	margin-bottom: 10px;
 	font-size: 1.5rem;
+	text-align: center;
 }
-.card-content p{
+.card p{
 	font-size: 1rem;
 	line-height: 1.5;
+	text-align: justify;
 }
 
 .contacto{
