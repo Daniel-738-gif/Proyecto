@@ -83,7 +83,7 @@ header{
   }
   100% {
   	/*inset(top right bottom left);*/
-    clip-path: inset(20% 18% 20% 18%);
+    clip-path: inset(17% 18% 17% 15%);
     
     transform: translate(-50%, -50%) scale(1);
     
