@@ -240,12 +240,18 @@ main button[type="submit"] {
   to { opacity: 1; }
 }
 
+.sec1der {
+  margin-top: 100px;
+  
+}
 
 .mosaico {
+  
   display: flex;
   gap: 20px;
   justify-content: center;
   flex-wrap: wrap;
+  margin-top: 40px;
 }
 
 .recurso {
@@ -257,15 +263,21 @@ main button[type="submit"] {
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-.recurso img {
+.recurso iframe {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  border: none;
+  overflow: hidden;
+  pointer-events: none;
   transition: transform 0.3s ease;
+   pointer-events: none;
+    scrollbar-width: none;
 }
 
-.recurso:hover img {
-  transform: scale(1.1);
+
+.recurso:hover iframe {
+  transform: scale(1.2);
 }
 
 .recurso .info {
@@ -283,4 +295,22 @@ main button[type="submit"] {
 
 .recurso:hover .info {
   opacity: 1;
+}
+
+.overlay-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  text-indent: -9999px; 
+}
+iframe {
+  overflow: hidden;
+  scrollbar-width: none; /* Firefox */
+}
+
+iframe::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Edge */
 }
