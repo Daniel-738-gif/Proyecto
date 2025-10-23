@@ -241,8 +241,8 @@ main button[type="submit"] {
 }
 
 .sec1der {
-  margin-top: 100px;
-  
+  top: 10%;
+  position: relative;
 }
 
 .mosaico {
@@ -262,6 +262,8 @@ main button[type="submit"] {
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
+
+
 
 .recurso iframe {
   width: 100%;
@@ -291,6 +293,7 @@ main button[type="submit"] {
   font-weight: bold;
   opacity: 0;
   transition: opacity 0.3s ease;
+  width: 90%;
 }
 
 .recurso:hover .info {
