@@ -27,15 +27,25 @@ a {
 
 
 body {
+  position: relative;
 	font-family:'Space Grotesk', sans-serif;
   justify-content: space-between;
   padding: 0 40px;
+   color: #3E3E3E;
   background-color: var(--fondo-claro);
-  color: #3E3E3E;
   transition: background-color 0.3s, color 0.3s; 
   height: 100%;
   margin: 0;
+  background-image: url(img/bg1.jpg);
+   background-size: cover;
+   background-repeat: repeat;
+   background-blend-mode: color-burn;
 }
+
+
+
+
+
 
 body a{
   color: var(--primary-color);
