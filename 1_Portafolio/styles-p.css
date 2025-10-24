@@ -36,10 +36,22 @@ body {
   transition: background-color 0.3s, color 0.3s; 
   height: 100%;
   margin: 0;
-  background-image: url(img/bg1.jpg);
+  
+}
+
+body::after  {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+ background-image: url(img/bg3.jpg);
    background-size: cover;
    background-repeat: repeat;
-   background-blend-mode: color-burn;
+   background-blend-mode: luminosity;
+   opacity: 1;
 }
 
 
