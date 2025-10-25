@@ -131,24 +131,24 @@ body.dark a:hover {
 
 /* boton cambio a modo oscuro */
    #modo-oscuro {
-    background: darkcyan;
-    color: white;
+    background: rgb(233, 232, 206);
+    color: rgb(66, 60, 60);
     padding: 8px 14px;
     cursor: pointer;
     position: absolute;
     top: 10px;
     right: 10px;
-    border: 1px solid #00ffcc;       /* borde texto */
+    border: 1px solid #72725d;       /* borde texto */
     border-radius: 50px;
     max-width: 600px;
-    box-shadow: 0 0 2px #00ffcc;    /* brillo */
+    box-shadow: 0 0 2px #e7c425;    /* brillo */
     
   }
 
 
 
   #modo-oscuro:hover {
-  background-color: #00ffcc;
+  background-color: #b89629;
   transition: background-color 0.3s, color 2s;}
 
 
