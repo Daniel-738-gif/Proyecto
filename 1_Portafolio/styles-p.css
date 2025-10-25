@@ -114,7 +114,7 @@ body.dark p, body.dark h1, body.dark h2, body.dark h3
   
 }
 body.dark a{
-  color: var(--letras-oscuro) !important;
+  color: var(--letras-oscuro);
   text-shadow: 0 0 80px #ff00cc;
   animation: arcoiris 3s infinite ease-in-out;
 }
@@ -163,16 +163,17 @@ footer {
   width: 100vw;
   padding: -1px;
   background-color: #3E3E3E;
-  color: #eee;
-  margin-left: calc(-50vw + 50%);
+   margin-left: calc(-50vw + 50%);
   text-align: center;
+  position: relative;
+  bottom: 0;
 }
-
-.alinear{
-    top: 20000px;
-    left: 200px; 
-    
+footer h2 {
+    margin: 10px;
+    font-size: 20px;
+    color: #ffffff;
   }
+
 
   footer a {
     margin: 10px;
@@ -181,11 +182,13 @@ footer {
     margin: 25px;
     text-decoration: none;
 
+
   }
 
 
     footer a:hover {
       text-decoration: underline;
+      color: var(--accent-color);
     }
 
 
