@@ -1,0 +1,22 @@
+
+
+
+ 
+.contenido {
+    display: flex; 
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: lightblue;
+    padding: 10px;
+    border-radius: 5px;
+    width: 300px;
+    gap: 100px;
+    grid-row: auto;
+    grid-column: auto;
+    
+    margin: auto;
+    font-size: 29px;
+    font-family: Arial, sans-serif;
+}
+
