@@ -12,11 +12,16 @@
     border-radius: 5px;
     width: 300px;
     gap: 100px;
-    grid-row: auto;
-    grid-column: auto;
-    
     margin: auto;
     font-size: 29px;
     font-family: Arial, sans-serif;
 }
 
+
+.btnjs{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  
+    align-items: flex-start;
+}
