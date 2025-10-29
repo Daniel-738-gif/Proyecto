@@ -31,9 +31,22 @@
        <div>
         <script>
             function saludar() {
-                alert("¡Hola! Bienvenido a la página de pruebas.");
+                alert("¡Hola! Bienvenido a la página de pruebas html.");
+                
             }
+            saludar();
         </script>
+
+        <button id="miBoton">Haz clic</button>
+<p id="mensaje">Esperando clic...</p>
+
+<script>
+  const boton = document.getElementById("miBoton");
+  boton.addEventListener("click", () => {
+    document.getElementById("mensaje").textContent = "¡Gracias por hacer clic!";
+  });
+</script>
+
        </div>
 
     </main>
