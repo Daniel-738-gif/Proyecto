@@ -13,3 +13,9 @@ const boton3 = document.getElementById("btn3");
              boton3.addEventListener("click", () => {
                 document.getElementById("mensaje2").textContent = "prueba de mensaje en js";
                 });
+
+
+ document.addEventListener("keydown", function(event) {
+    document.getElementById("tecla").textContent = 
+      "Has presionado: " + event.key;
+  });
