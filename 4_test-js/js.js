@@ -30,3 +30,13 @@ const boton3 = document.getElementById("btn3");
     document.body.style.backgroundColor = colorHex;
     document.getElementById("colorActual").textContent = "Color actual: " + colorHex;
   }
+
+////Mostrar fecha actual
+  function mostrarFecha() {
+    const hoy = new Date();
+    const opciones = { year: 'numeric', month: 'long', day: 'numeric' };
+    document.getElementById("fechaActual").textContent = "La fecha actual es: " + hoy.toLocaleDateString("es-ES", opciones);
+    
+  }
+
+
