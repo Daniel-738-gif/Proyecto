@@ -38,6 +38,29 @@ const boton3 = document.getElementById("btn3");
     document.getElementById("fechaActual").textContent = "La fecha actual es: " + hoy.toLocaleDateString("es-ES", opciones);
     
   }
+///Fecha y hora
+  document.getElementById("fechaHora").addEventListener("click", () => {
+    const fecha = new Date();
+    document.getElementById("demo").textContent = fecha;
+  } );
+
+  /////dias hata navidad
+  function diasHastaNavidad() {
+    const hoy = new Date();
+    const navidad = new Date(hoy.getFullYear(), 11, 25); 
+    if (hoy > navidad) {
+        navidad.setFullYear(navidad.getFullYear() + 1);
+    }
+    const diferencia = navidad - hoy;
+    const dias = Math.ceil(diferencia / (1000 * 60 * 60 * 24));
+    return dias;
+}
+
+document.getElementById("diasNavidad").addEventListener("click", () => {
+    const dias = diasHastaNavidad();
+    document.getElementById("resultado").textContent = "Faltan " + dias + " días para Navidad.";
+});
+
 
 
 //// decoraciones arrastrables

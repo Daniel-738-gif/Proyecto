@@ -1,6 +1,10 @@
 
-
-
+body{
+    background-color: #f0f8ff;
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
  
 .contenido {
     display: flex; 
@@ -36,9 +40,23 @@
 
 .arbol img{
     position: relative;
-    width: 1000px;
+    width: 700px;
     margin: auto;
     display: block;
     right: calc(-50% + 50%);
     
+}
+
+.interacciones button p{
+    font-size: 10px;
+    font-family: Arial, sans-serif;
+}
+.interacciones button{
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid #000;
+    background-color: #e0e0e0;
 }
