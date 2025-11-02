@@ -39,4 +39,9 @@ const boton3 = document.getElementById("btn3");
     
   }
 
+////////decoraciones arrastrables
+let active = null
+let offsetX = 0;
+let offsetY = 0;
+
 

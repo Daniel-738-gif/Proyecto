@@ -25,3 +25,9 @@
   
     align-items: flex-start;
 }
+
+.decoraciones img{
+    width: 100px;
+    height: 100px;
+    cursor: grab;
+}
