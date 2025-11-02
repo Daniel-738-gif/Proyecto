@@ -39,9 +39,31 @@ const boton3 = document.getElementById("btn3");
     
   }
 
-////////decoraciones arrastrables
-let active = null
+
+//// decoraciones arrastrables
+let active = null;
 let offsetX = 0;
 let offsetY = 0;
 
+document.querySelectorAll(".decoraciones img").forEach(el => {
+  el.addEventListener("mousedown", e => {
+    active = el;
+    offsetX = e.clientX - el.offsetLeft;
+    offsetY = e.clientY - el.offsetTop;
+    el.style.cursor = "grabbing";
+  });
+});
 
+document.addEventListener("mousemove", e => {
+  if (active) {
+    active.style.left = (e.clientX - offsetX) + "px";
+    active.style.top = (e.clientY - offsetY) + "px";
+  }
+});
+
+document.addEventListener("mouseup", () => {
+  if (active) {
+    active.style.cursor = "grab";
+    active = null;
+  }
+});
