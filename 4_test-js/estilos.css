@@ -90,12 +90,23 @@ main::after {
   max-width: 300px;
   margin: 1rem auto;
   text-align: center;
+  position: relative;
+  width: 200px;
+  width: 100%;
+max-width: 300px;
 }
 
 .panel button {
-  display: block;
-  margin: 0.5rem auto;
+  margin: 0.5rem 0;
   padding: 0.5rem 1rem;
-  font-size: 1rem;
+  border: none;
+  background-color: #007acc;
+  color: white;
+  border-radius: 4px;
   cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.panel button:hover {
+  background-color: #005fa3;
 }
