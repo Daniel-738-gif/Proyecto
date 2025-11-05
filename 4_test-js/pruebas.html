@@ -11,9 +11,31 @@
 <body>
     <main>
 
+           <div class="arbol">
+            <img src="tree.png" alt="arbol">
+        </div>
+
+        <div class="decoraciones">
+            <img src="1.png" alt="">
+            <img src="2.png" alt="">
+            <img src="3.png" alt="">
+        </div>
+
         <h1>#4</h1>
         <div class="contenido" onclick="mostrarHora()">
             <p>Arbol de navidad interactivo</p>
+
+<section id="panelControl" class="panel">
+  <h2>Panel de Control</h2>
+  <button onclick="cambiarFondo()">Cambiar fondo</button>
+  <button onclick="mostrarFecha()">Mostrar fecha</button>
+  <button onclick="rotarDecoraciones()">Rotar decoraciones</button>
+  <button onclick="diasHastaNavidad()">Días hasta Navidad</button>
+</section>
+
+<p id="colorActual"></p>
+<p id="fechaActual"></p>
+<p id="resultado"></p>
 
         </div><!--
         <section class="btnjs">
@@ -53,15 +75,7 @@
 
         </div>
 
-        <div class="arbol">
-            <img src="tree.png" alt="arbol">
-        </div>
-
-        <div class="decoraciones">
-            <img src="1.png" alt="">
-            <img src="2.png" alt="">
-            <img src="3.png" alt="">
-        </div>
+     
     </main>
 
 
