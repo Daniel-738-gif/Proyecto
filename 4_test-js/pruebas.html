@@ -25,17 +25,17 @@
         <div class="contenido" onclick="mostrarHora()">
             <p>Arbol de navidad interactivo</p>
 
-<section id="panelControl" class="panel">
-  <h2>Panel de Control</h2>
-  <button onclick="cambiarFondo()">Cambiar fondo</button>
-  <button onclick="mostrarFecha()">Mostrar fecha</button>
-  <button onclick="rotarDecoraciones()">Rotar decoraciones</button>
-  <button onclick="diasHastaNavidad()">Días hasta Navidad</button>
-</section>
+            <button id="togglePanel">☰ Panel</button>
 
-<p id="colorActual"></p>
-<p id="fechaActual"></p>
-<p id="resultado"></p>
+<aside id="panelLateral" class="panel-lateral oculto">
+  <h2>Panel de Control</h2>
+  <button onclick="cambiarFondo()">🎨 Fondo</button>
+  <button onclick="mostrarFecha()">📅 Fecha</button>
+  <button onclick="rotarDecoraciones()">🔄 Rotar</button>
+  <button onclick="diasHastaNavidad()">🎄 Navidad</button>
+</aside>
+
+
 
         </div><!--
         <section class="btnjs">

@@ -9,6 +9,8 @@ body{
 main{
     position: relative;
     z-index: 0;
+    margin-left: 240px; /* espacio para el panel */
+  padding: 2rem;
 }
 main::after {
   content: "";
@@ -82,31 +84,50 @@ main::after {
     background-color: #e0e0e0;
 }
 
-.panel {
-  background-color: #f0f0f0;
-  padding: 1rem;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  max-width: 300px;
-  margin: 1rem auto;
-  text-align: center;
-  position: relative;
-  width: 200px;
-  width: 100%;
-max-width: 300px;
-}
-
-.panel button {
-  margin: 0.5rem 0;
+#togglePanel {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  z-index: 1100;
   padding: 0.5rem 1rem;
-  border: none;
-  background-color: #007acc;
-  color: white;
-  border-radius: 4px;
+  font-size: 1.2rem;
   cursor: pointer;
-  transition: background-color 0.2s ease;
 }
 
-.panel button:hover {
-  background-color: #005fa3;
+.panel-lateral {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 220px;
+  height: 100vh;
+  background-color: #f8f8f8;
+  border-right: 1px solid #ccc;
+  padding: 1rem;
+  box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+}
+
+.panel-lateral.visible {
+  transform: translateX(0);
+}
+
+.oculto {
+  display: none;
+}
+
+.visible {
+  display: block;
+}
+.panel-lateral button {
+  padding: 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 1px solid #000;
+  background-color: #e0e0e0;
 }

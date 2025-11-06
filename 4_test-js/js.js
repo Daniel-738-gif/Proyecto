@@ -90,3 +90,12 @@ document.addEventListener("mouseup", () => {
     active = null;
   }
 });
+
+const panel = document.getElementById("panelLateral");
+const toggleBtn = document.getElementById("togglePanel");
+
+toggleBtn.addEventListener("click", () => {
+  panel.classList.toggle("visible");
+  panel.classList.toggle("oculto");
+});
+
