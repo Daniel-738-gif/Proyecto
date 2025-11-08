@@ -180,7 +180,7 @@ main::after {
   width: 12px;
   height: 12px;
   color: white;
-  font-size: 100px;
+  box-shadow: 0 0 4px rgba(255,255,255,0.6);
   opacity: 0.9;
   animation: caer linear infinite;
 }
