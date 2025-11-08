@@ -160,3 +160,34 @@ main::after {
 ::-webkit-scrollbar-thumb:hover {
   background-color: #09a504;
 }
+
+
+
+.nieve {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 9999;
+  overflow: hidden;
+}
+
+.nieve span {
+  position: absolute;
+  top: -10px;
+  width: 12px;
+  height: 12px;
+  color: white;
+  font-size: 100px;
+  opacity: 0.9;
+  animation: caer linear infinite;
+}
+
+@keyframes caer {
+  to {
+    transform: translateY(100vh);
+    opacity: 0;
+  }
+}

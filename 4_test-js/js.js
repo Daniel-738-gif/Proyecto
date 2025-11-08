@@ -99,3 +99,47 @@ toggleBtn.addEventListener("click", () => {
   panel.classList.toggle("oculto");
 });
 
+
+
+let nieveActiva = false;
+
+function generarNieve() {
+  const contenedor = document.getElementById("nieveContenedor");
+  contenedor.innerHTML = ""; // Limpia copos anteriores
+
+  let i = 0;
+  while (i < 50) {
+    const copo = document.createElement("span");
+    const tamaño = Math.random() * 8 + 4;
+    const duracion = Math.random() * 5 + 5;
+    const retraso = Math.random() * 5;
+    const izquierda = Math.random() * window.innerWidth;
+
+    copo.style.width = copo.style.height = `${tamaño}px`;
+    copo.style.left = `${izquierda}px`;
+    copo.style.animationDuration = `${duracion}s`;
+    copo.style.animationDelay = `${retraso}s`;
+    copo.textContent = "❆";
+    copo.style.background = "none";
+    copo.style.fontSize = "16px";
+
+    contenedor.appendChild(copo);
+    i++;
+  }
+}
+
+document.getElementById("toggleNieve").addEventListener("click", () => {
+  nieveActiva = !nieveActiva;
+  const contenedor = document.getElementById("nieveContenedor");
+  const boton = document.getElementById("toggleNieve");
+
+  if (nieveActiva) {
+    generarNieve();
+    boton.textContent = "⛔ Desactivar nieve";
+  } else {
+    contenedor.innerHTML = "";
+    boton.textContent = "❄️ Activar nieve";
+  }
+});
+
+
