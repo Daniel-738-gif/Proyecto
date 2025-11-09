@@ -1,3 +1,17 @@
+
+
+
+@font-face{
+   font-family: 'Navidad';
+   src: url('fuentes/MerryChristmasStar.ttf') format('truetype');
+}
+
+.root {
+  --fuente-navidad: 'Navidad';
+}
+
+
+
 body {
   background-color: #f0f8ff;
   margin: 0;
@@ -30,18 +44,27 @@ main::after {
 
 
 .contenido {
+  font-family: 'Navidad';
+
   display: flex;
+  position: relative;
   text-align: center;
   align-items: center;
   justify-content: center;
-  background-color: lightblue;
-  padding: 10px;
+  color: #fd3232;
   border-radius: 5px;
-  width: 300px;
-  gap: 100px;
+  width: 600px;
+  left: calc(-50%+50%);
   margin: auto;
-  font-size: 29px;
-  font-family: Arial, sans-serif;
+  font-size: 49px;
+  margin-bottom: -50px;
+   text-shadow:
+    -2px -2px 0 #ffffff,
+    2px -2px 0 #ffffff,
+    -2px 2px 0 #ffffff,
+    2px 2px 0 #ffffff,
+    0px 0px 4px #ffffff;
+  
 }
 
 
@@ -66,13 +89,15 @@ main::after {
 }
 
 .decoraciones .estrella img {
-  width: 1000px;
+  width: auto;
+  height: 120px;
   filter: drop-shadow(0 0 6px gold);
 }
 
 .arbol img {
   position: relative;
-  height: 620px;
+  top: 100px;
+  height: 630px;
   width: 550px;
   margin: auto;
   display: block;
@@ -94,6 +119,12 @@ main::after {
   border: 1px solid #000;
   background-color: #e0e0e0;
 }
+.interacciones2{
+  display: none;
+ 
+}
+
+
 
 #togglePanel {
   position: fixed;
