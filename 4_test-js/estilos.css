@@ -102,7 +102,7 @@ main::after {
   width: 220px;
   height: 100vh;
   background-image: url(bg/1.jpg);
-  opacity: 0.7;
+  opacity: 0.8;
   border-right: 1px solid #ccc;
   padding: 1rem;
   box-shadow: 2px 0 5px rgba(0,0,0,0.1);
@@ -112,6 +112,19 @@ main::after {
   gap: 0.5rem;
   transform: translateX(-100%);
   transition: transform 0.3s ease;
+  
+}
+.panel-lateral h2 {
+  margin-top: 50px;
+  font-size: 2rem;
+  text-align: center;
+  color: #000;
+}
+
+.panel-lateral p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: #000;
 }
 
 .panel-lateral.visible {
