@@ -127,7 +127,7 @@ function generarNieve() {
     copo.style.animationDelay = `${retraso}s`;
     copo.textContent = "❆";
     copo.style.background = "none";
-    copo.style.fontSize = "16px";
+    copo.style.fontSize = "26px";
 
     contenedor.appendChild(copo);
     i++;

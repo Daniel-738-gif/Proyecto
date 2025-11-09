@@ -68,6 +68,14 @@ main::after {
 }
 
 
+.test{ 
+  position: fixed;
+  z-index: 100;
+  margin-bottom: -150px;
+}
+
+
+
 .btnjs {
   display: flex;
   flex-direction: column;
@@ -247,19 +255,19 @@ main::after {
 }
 
 .nieve span {
-  position: absolute;
+  position: fixed;
   top: -10px;
   width: 12px;
   height: 12px;
   color: white;
-  box-shadow: 0 0 4px rgba(255, 255, 255, 0.6);
-  opacity: 0.9;
+  box-shadow: 0 0 4px rgba(0, 255, 34, 0.6);
+  opacity: 1;
   animation: caer linear infinite;
 }
 
 @keyframes caer {
   to {
     transform: translateY(100vh);
-    opacity: 0;
+    opacity: 1;
   }
 }
