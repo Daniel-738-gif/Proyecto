@@ -1,17 +1,17 @@
+body {
+  background-color: #f0f8ff;
+  margin: 0;
 
-body{
-    background-color: #f0f8ff;
-    margin: 0;
-    
-    font-family: Arial, sans-serif;
+  font-family: Arial, sans-serif;
 }
- 
-main{
-    position: relative;
-    z-index: 0;
-   /* espacio para el panel */
+
+main {
+  position: relative;
+  z-index: 0;
+  /* espacio para el panel */
   padding: 2rem;
 }
+
 main::after {
   content: "";
   position: absolute;
@@ -21,7 +21,8 @@ main::after {
   height: 100%;
   background-image: url(bg/3.jpg);
   background-repeat: repeat;
-  background-size: 200px 300px; /* Tamaño reducido del patrón */
+  background-size: 200px 300px;
+  /* Tamaño reducido del patrón */
   opacity: 0.4;
   z-index: -1;
   pointer-events: none;
@@ -29,60 +30,69 @@ main::after {
 
 
 .contenido {
-    display: flex; 
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    background-color: lightblue;
-    padding: 10px;
-    border-radius: 5px;
-    width: 300px;
-    gap: 100px;
-    margin: auto;
-    font-size: 29px;
-    font-family: Arial, sans-serif;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background-color: lightblue;
+  padding: 10px;
+  border-radius: 5px;
+  width: 300px;
+  gap: 100px;
+  margin: auto;
+  font-size: 29px;
+  font-family: Arial, sans-serif;
 }
 
 
-.btnjs{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  
-    align-items: flex-start;
+.btnjs {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  align-items: flex-start;
 }
 
-.decoraciones img{
-    width: 100px;
-    height: 100px;
-    cursor: grab;
-    position: absolute;
-    
-   
+.decoraciones img {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  width: 50px;
+  height: 50px;
+  gap: 1rem;
+  cursor: grab;
+  position: absolute;
+
 }
 
-.arbol img{
-    position: relative;
-    height: 620px;
-    width: 550px;
-    margin: auto;
-    display: block;
-    right: calc(-50% + 50%);
-    
+.decoraciones .estrella img {
+  width: 1000px;
+  filter: drop-shadow(0 0 6px gold);
 }
 
-.interacciones button p{
-    font-size: 10px;
-    font-family: Arial, sans-serif;
+.arbol img {
+  position: relative;
+  height: 620px;
+  width: 550px;
+  margin: auto;
+  display: block;
+  right: calc(-50% + 50%);
+
 }
-.interacciones button{
-    font-size: 15px;
-    font-family: Arial, sans-serif;
-    padding: 5px;
-    cursor: pointer;
-    border-radius: 5px;
-    border: 1px solid #000;
-    background-color: #e0e0e0;
+
+.interacciones button p {
+  font-size: 10px;
+  font-family: Arial, sans-serif;
+}
+
+.interacciones button {
+  font-size: 15px;
+  font-family: Arial, sans-serif;
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 1px solid #000;
+  background-color: #e0e0e0;
 }
 
 #togglePanel {
@@ -105,7 +115,7 @@ main::after {
   opacity: 0.8;
   border-right: 1px solid #ccc;
   padding: 1rem;
-  box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
   z-index: 1000;
   display: flex;
   flex-direction: column;
@@ -114,8 +124,9 @@ main::after {
   transition: transform 0.3s ease;
   align-items: center;
   text-align: center;
-  
+
 }
+
 .panel-lateral h2 {
   color: #fcfcfc;
   margin-top: 50px;
@@ -123,26 +134,10 @@ main::after {
   font-family: 'Arial Black', sans-serif;
   text-shadow:
     -2px -2px 0 #000,
-     2px -2px 0 #000,
-    -2px  2px 0 #000,
-     2px  2px 0 #000,
-      -2px -2px 0 #000,
-     2px -2px 0 #000,
-    -2px  2px 0 #000,
-     2px  2px 0 #000,
-      -2px -2px 0 #000,
-     2px -2px 0 #000,
-    -2px  2px 0 #000,
-     2px  2px 0 #000,
-      -2px -2px 0 #000,
-     2px -2px 0 #000,
-    -2px  2px 0 #000,
-     2px  2px 0 #000,
-      -2px -2px 0 #000,
-     2px -2px 0 #000,
-    -2px  2px 0 #000,
-     2px  2px 0 #000,
-     0px  0px 4px #000;
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+    2px 2px 0 #000,
+    0px 0px 4px #000;
 }
 
 
@@ -163,9 +158,10 @@ main::after {
   /*background-image: url(bg/1.jpg);*/
   background-color: #e0e0e0;
   font-family: Arial, sans-serif;
- 
+
 }
-.panel-lateral button:hover{
+
+.panel-lateral button:hover {
   background-color: #585858;
 }
 
@@ -225,7 +221,7 @@ main::after {
   width: 12px;
   height: 12px;
   color: white;
-  box-shadow: 0 0 4px rgba(255,255,255,0.6);
+  box-shadow: 0 0 4px rgba(255, 255, 255, 0.6);
   opacity: 0.9;
   animation: caer linear infinite;
 }
