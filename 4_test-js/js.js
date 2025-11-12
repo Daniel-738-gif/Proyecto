@@ -71,16 +71,16 @@ let offsetY = 0;
 document.querySelectorAll(".decoraciones img").forEach(el => {
   el.addEventListener("mousedown", e => {
     active = el;
-    offsetX = e.clientX - el.offsetLeft;
-    offsetY = e.clientY - el.offsetTop;
+    offsetX = e.pageX - el.offsetLeft;
+    offsetY = e.pageY - el.offsetTop;
     el.style.cursor = "grabbing";
   });
 });
 
 document.addEventListener("mousemove", e => {
   if (active) {
-    active.style.left = (e.clientX - offsetX) + "px";
-    active.style.top = (e.clientY - offsetY) + "px";
+    active.style.left = (e.pageX - offsetX) + "px";
+active.style.top = (e.pageY - offsetY) + "px";
   }
 });
 
@@ -91,16 +91,17 @@ document.addEventListener("mouseup", () => {
   }
 });
 
+function dispersarDecoraciones() {
 document.querySelectorAll(".decoraciones img").forEach(el =>{
   const maxX = window.innerWidth - 50;
   const maxY = window.innerHeight - 50;
 
   el.style.left = Math.random() * maxX + "px";
-  el.style.left = Math.random() * MaxY + "px";
+  el.style.top = Math.random() * maxY + "px";
   
   })
 
-
+}
 
 
 
