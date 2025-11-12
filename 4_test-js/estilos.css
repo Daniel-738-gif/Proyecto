@@ -84,17 +84,26 @@ main::after {
   align-items: flex-start;
 }
 
+
+.decoraciones {
+  position: fixed; /* se mantiene en pantalla */
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+   pointer-events: none; /* opcional: evita que interfiera con otros clics */
+  z-index: 1000; /* asegúrate de que esté por encima del contenido */
+}
+
+
 .decoraciones img {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
+  position: absolute;
   width: 50px;
   height: 50px;
-  gap: 1rem;
   cursor: grab;
-  position: absolute;
-
+  pointer-events: auto; /* permite arrastrar */
 }
+
 
 .decoraciones .estrella img {
   width: auto;
@@ -255,7 +264,7 @@ main::after {
 }
 
 .nieve span {
-  position: fixed;
+  position: relative;
   top: -10px;
   width: 12px;
   height: 12px;

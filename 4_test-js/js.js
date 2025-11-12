@@ -91,6 +91,18 @@ document.addEventListener("mouseup", () => {
   }
 });
 
+document.querySelectorAll(".decoraciones img").forEach(el =>{
+  const maxX = window.innerWidth - 50;
+  const maxY = window.innerHeight - 50;
+
+  el.style.left = Math.random() * maxX + "px";
+  el.style.left = Math.random() * MaxY + "px";
+  
+  })
+
+
+
+
 
 
 
