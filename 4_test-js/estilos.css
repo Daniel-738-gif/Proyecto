@@ -288,3 +288,12 @@ main::after {
     opacity: 1;
   }
 }
+
+
+.mensaje{
+  position: relative;
+}
+
+.mensaje h2 {
+  position: absolute;
+}
