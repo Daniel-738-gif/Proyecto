@@ -123,11 +123,11 @@ toggleBtn.addEventListener("click", () => {
 let nieveActiva = false;
 
 function generarNieve() {
-  const contenedor = document.getElementById("nieveContenedor");
+  const contenedor = document.getElementById("nieveContenedor2");
   contenedor.innerHTML = ""; // Limpia copos anteriores
 
   let i = 0;
-  while (i < 50) {
+  while (i < 100) {
     const copo = document.createElement("span");
     const tamaño = Math.random() * 8 + 4;
     const duracion = Math.random() * 5 + 5;

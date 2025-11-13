@@ -2,12 +2,12 @@
 
 
 @font-face{
-   font-family: 'Navidad';
+   font-family: 'FuenteNavidad';
    src: url('fuentes/MerryChristmasStar.ttf') format('truetype');
 }
 
 .root {
-  --fuente-navidad: 'Navidad';
+  --fuente-navidad: 'FuenteNavidad';
 }
 
 
@@ -44,7 +44,7 @@ main::after {
 
 
 .contenido {
-  font-family: 'Navidad';
+  font-family: 'FuenteNavidad';
 
   display: flex;
   position: relative;
@@ -261,21 +261,29 @@ main::after {
   pointer-events: none;
   z-index: 9999;
   overflow: hidden;
+  
 }
 
 .nieve span {
-  position: relative;
-  top: -10px;
+  position: absolute;
+  top: -20px;
   width: 12px;
   height: 12px;
   color: white;
-  box-shadow: 0 0 4px rgba(0, 255, 34, 0.6);
+  text-shadow: 0 0 4px rgba(0, 0, 0, 0.6);
   opacity: 1;
-  animation: caer linear infinite;
+  animation: caer2 linear infinite;
+  ;
 }
 
-@keyframes caer {
-  to {
+@keyframes caer2 {
+  
+  0% {
+		transform: translate(-50%, -150%);
+		opacity: 0;
+	}
+  
+  100% {
     transform: translateY(100vh);
     opacity: 1;
   }
