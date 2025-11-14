@@ -44,7 +44,7 @@ const boton3 = document.getElementById("btn3");
     document.getElementById("demo").textContent = fecha;
   } );
 
-  /////dias hata navidad
+  /////dias hasta navidad
   function diasHastaNavidad() {
     const hoy = new Date();
     const navidad = new Date(hoy.getFullYear(), 11, 25); 
@@ -163,3 +163,17 @@ document.getElementById("toggleNieve").addEventListener("click", () => {
 });
 
 
+function mensajeFlotante(texto) {
+  const mensaje = document.createElement("div");
+  mensaje.className = "mensaje";
+  mensaje.innerHTML = `<h2>${texto}</h2>`;
+  document.body.appendChild(mensaje);
+  setTimeout(() => {
+    mensaje.remove();
+  }, 3000);
+}
+
+document.getElementById("diasNavidad").addEventListener("click", () => {
+  const dias = diasHastaNavidad();
+  mensajeFlotante(`Faltan ${dias} días para Navidad`);
+});
