@@ -141,6 +141,7 @@ function generarNieve() {
     copo.textContent = "❆";
     copo.style.background = "none";
     copo.style.fontSize = "26px";
+  
 
     contenedor.appendChild(copo);
     i++;
