@@ -162,7 +162,3 @@ document.getElementById("toggleNieve").addEventListener("click", () => {
   }
 });
 
-
-function mensajeFlotante(texto) {
- 
-});
