@@ -164,16 +164,5 @@ document.getElementById("toggleNieve").addEventListener("click", () => {
 
 
 function mensajeFlotante(texto) {
-  const mensaje = document.createElement("div");
-  mensaje.className = "mensaje";
-  mensaje.innerHTML = `<h2>${texto}</h2>`;
-  document.body.appendChild(mensaje);
-  setTimeout(() => {
-    mensaje.remove();
-  }, 3000);
-}
-
-document.getElementById("diasNavidad").addEventListener("click", () => {
-  const dias = diasHastaNavidad();
-  mensajeFlotante(`Faltan ${dias} días para Navidad`);
+ 
 });
