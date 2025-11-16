@@ -92,7 +92,8 @@ main::after {
   width: 100vw;
   height: 100vh;
    pointer-events: none; 
-  z-index: 1000; 
+  z-index: 1000;
+  display: none;
 }
 
 
@@ -109,6 +110,7 @@ main::after {
   width: auto;
   height: 120px;
   filter: drop-shadow(0 0 6px gold);
+  
 }
 
 .arbol img {
@@ -292,8 +294,6 @@ main::after {
 
 .mensaje{
   position: relative;
+  
 }
 
-.mensaje h2 {
-  position: absolute;
-}
