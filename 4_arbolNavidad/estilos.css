@@ -320,10 +320,33 @@ main::after {
   border-radius: 10px;
 }
 
+.contenido-modal h2 {
+  top: 50%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  color: #fd3232;
+  font-family: 'FuenteNavidad';
+  font-size: 49px;
+  text-shadow:
+    -2px -2px 0 #ffffff,
+    2px -2px 0 #ffffff,
+    -2px 2px 0 #ffffff,
+    2px 2px 0 #ffffff,
+    0px 0px 4px #ffffff;
+}
+
 .cerrar {
   color: #aaa;
   float: right;
   font-size: 28px;
   font-weight: bold;
+  cursor: pointer;
+}
+
+.cerrar:hover,
+.cerrar:focus {
+  color: black;
+  text-decoration: none;
   cursor: pointer;
 }

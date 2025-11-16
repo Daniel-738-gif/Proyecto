@@ -169,3 +169,17 @@ document.getElementById("toggleNieve").addEventListener("click", () => {
   }
 });
 
+
+const abrir = document.getElementById("abrirModal");
+const modal = document.getElementById("miModal");
+const cerrar = document.querySelector(".cerrar");
+
+abrir.addEventListener("click", () => {
+  modal.style.display = "flex";
+}); 
+
+cerrar.addEventListener("click", () => {
+  modal.style.display = "none";
+});
+
+
