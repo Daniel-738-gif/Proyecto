@@ -104,6 +104,13 @@ document.querySelectorAll(".decoraciones img").forEach(el =>{
 }
 
 
+ 
+
+
+
+
+
+
 
 
 
@@ -150,7 +157,7 @@ function generarNieve() {
 
 document.getElementById("toggleNieve").addEventListener("click", () => {
   nieveActiva = !nieveActiva;
-  const contenedor = document.getElementById("nieveContenedor");
+  const contenedor = document.getElementById("nieveContenedor2");
   const boton = document.getElementById("toggleNieve");
 
   if (nieveActiva) {
