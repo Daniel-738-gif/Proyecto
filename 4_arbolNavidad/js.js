@@ -1,9 +1,6 @@
 
 
-function mostrarHora() {
-	const ahora = new Date();
-    console.log("Son las", ahora.toLocaleTimeString());
-}
+
  
 ////Boton que cambia mensaje
  const boton = document.getElementById("miBoton");
