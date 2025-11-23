@@ -182,3 +182,11 @@ cerrar.addEventListener("click", () => {
 });
 
 
+function BotonMusica() {
+  const musica = document.getElementById("musicaNavidad");
+  if (musica.paused) {
+    musica.play();
+  } else {
+    musica.pause();
+  }
+} 
