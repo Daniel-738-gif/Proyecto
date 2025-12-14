@@ -22,10 +22,10 @@
 
 
   
-        <div id="miModal" class="modal">
-            <div class="contenido-modal">
+        <div id="mensaje" class="modal">
+            <div class="contenido-mensaje">
                 <span class="cerrar">&times;</span>
-                <h2 id="resultado">HELLP WORLD</h2>
+                <h2 id="resultado">a</h2>
               
             </div>
         </div>
@@ -33,29 +33,25 @@
 
 
 
-    <div class="mensaje" id="mensajejs">
-        <h2 id="resultado">Dias hasta navidad</h2>
+
+
+      <div id="arbol" class="arbol">
+  <img src="tree.png" alt="arbol">
+  <div class="decoraciones oculto" id="decoraciones">
+    <img src="1.png" alt="">
+    <img src="2.png" alt="">
+    <img src="3.png" alt="">
+    <img src="4.png" alt="">
+    <div class="estrella">
+      <img src="estrella.png" alt="">
     </div>
-    
+    <img src="liston.png"    alt="">
+    <img src="liston2.png"    alt="">
+    <img src="liston3.png"    alt="">
 
+  </div>
+</div>
 
-
-
-
-
-        <div class="arbol">
-            <img src="tree.png" alt="arbol">
-        </div>
-
-        <div class="decoraciones oculto" id="decoraciones">
-            <img src="1.png" alt="">
-            <img src="2.png" alt="">
-            <img src="3.png" alt="">
-            <div class="estrella">
-            <img src="estrella.png" alt="">
-            </div>
-            <img src="liston.png" alt="">
-        </div>
 
        
       
@@ -67,9 +63,9 @@
             <button onclick="cambiarFondo()">🎨 Fondo</button>
             <button id="diasNavidad">📅 Días hasta Navidad</button>
             <button onclick="BotonMusica()">🎵 Musica</button>
-            <button id="abrirModal"">🎄 Navidad</button>
+            
             <button id="toggleNieve">❄️ Activar nieve</button>
-            <button onclick="dispersarDecoraciones()" id="mostrarBtn">Decoraciones</button>
+            <button onclick="dispersarDecoraciones()" id="mostrarBtn">⭐ Decoraciones</button>
 
 
         </aside>
@@ -104,14 +100,28 @@
 
 
          <h2>#4</h4>
+
+            <div id="countdown">
+                 <a href="https://logwork.com/countdown-aahf"
+   class="countdown-timer"
+   data-width="400"
+   data-timezone="America/Lima"
+   data-language="es"
+   data-textcolor="#ffffff"
+   data-date="2025-12-25 00:00"
+   data-background="#000000"
+   data-digitscolor="#ffffff">
+   Dias hasta navidad
+</a>
+
+            </div>
     </main>
 
     <audio id="musicaNavidad" loop>
-  <source src="musica/musica.mp3" type="audio/mpeg">
-  
-</audio>
+        <source src="musica/musica.mp3" type="audio/mpeg">
+    </audio>
+<script src="https://cdn.logwork.com/widget/countdown.js"></script>
 
     <script src="js.js"></script>
 </body>
-
 </html>

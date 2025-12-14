@@ -43,22 +43,7 @@ const boton3 = document.getElementById("btn3");
     document.getElementById("demo").textContent = fecha;
   } );
 
-  /////dias hasta navidad
-  function diasHastaNavidad() {
-    const hoy = new Date();
-    const navidad = new Date(hoy.getFullYear(), 11, 25); 
-    if (hoy > navidad) {
-        navidad.setFullYear(navidad.getFullYear() + 1);
-    }
-    const diferencia = navidad - hoy;
-    const dias = Math.ceil(diferencia / (1000 * 60 * 60 * 24));
-    return dias;
-}
-
-document.getElementById("diasNavidad").addEventListener("click", () => {
-    const dias = diasHastaNavidad();
-    document.getElementById("resultado").textContent = "Faltan " + dias + " días para Navidad.";
-});
+  
 
 
 
@@ -91,16 +76,24 @@ document.addEventListener("mouseup", () => {
 });
 
 function dispersarDecoraciones() {
-document.querySelectorAll(".decoraciones img").forEach(el =>{
-  const maxX = window.innerWidth - 50;
-  const maxY = window.innerHeight - 50;
-
-  el.style.left = Math.random() * maxX + "px";
-  el.style.top = Math.random() * maxY + "px";
+  const arbol = document.getElementById("arbol");
+  const rect = arbol.getBoundingClientRect(); // dimensiones del árbol
   
-  })
+  document.querySelectorAll(".decoraciones img").forEach(el => {
+    const maxX = rect.width - el.offsetWidth;
+    const maxY = rect.height - el.offsetHeight;
 
+    
+    el.style.left = Math.random() * maxX + "px";
+    el.style.top = Math.random() * maxY + "px";
+  });
 }
+document.getElementById("mostrarBtn").addEventListener("click", () => {
+  const deco = document.getElementById("decoraciones");
+  deco.classList.remove("oculto");   
+  deco.classList.add("visible");     
+});
+
 
 
  
@@ -169,8 +162,31 @@ document.getElementById("toggleNieve").addEventListener("click", () => {
 });
 
 
-const abrir = document.getElementById("abrirModal");
-const modal = document.getElementById("miModal");
+
+
+
+
+
+
+/////dias hasta navidad
+  function diasHastaNavidad() {
+    const hoy = new Date();
+    const navidad = new Date(hoy.getFullYear(), 11, 25); 
+    if (hoy > navidad) {
+        navidad.setFullYear(navidad.getFullYear() + 1);
+    }
+    const diferencia = navidad - hoy;
+    const dias = Math.ceil(diferencia / (1000 * 60 * 60 * 24));
+    return dias;
+}
+
+document.getElementById("diasNavidad").addEventListener("click", () => {
+    const dias = diasHastaNavidad();
+    document.getElementById("resultado").textContent = "Faltan " + dias + " días para Navidad.";
+});
+/////Abrir mensaje dias hasta navidad
+const abrir = document.getElementById("diasNavidad");
+const modal = document.getElementById("mensaje");
 const cerrar = document.querySelector(".cerrar");
 
 abrir.addEventListener("click", () => {
@@ -182,6 +198,11 @@ cerrar.addEventListener("click", () => {
 });
 
 
+
+
+
+
+//////Musica
 function BotonMusica() {
   const musica = document.getElementById("musicaNavidad");
   if (musica.paused) {

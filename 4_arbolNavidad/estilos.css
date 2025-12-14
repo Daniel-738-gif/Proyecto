@@ -91,24 +91,25 @@ main::after {
 }
 
 
+
 .decoraciones {
-  position: absolute; 
+  position: absolute;   
   top: 0;
   left: 0;
-  width: 100vw;
-  height: 100vh;
-   pointer-events: none; 
-  z-index: 1000;
-  
+  width: 10%;
+  height: 10%;
+  pointer-events: none;
+  z-index: 1000;  
 }
-
 
 .decoraciones img {
   position: absolute;
+  left: 0;
+  top: 0;
   width: 50px;
   height: 50px;
   cursor: grab;
-  pointer-events: auto; 
+  pointer-events: auto;
 }
 
 
@@ -116,20 +117,48 @@ main::after {
   width: auto;
   height: 120px;
   filter: drop-shadow(0 0 6px gold);
+}
+
+.oculto {
+  display: none;
+}
+
+.visible {
+  display: block;
+}
+
+
+
+.arbol {
+  position: relative;  
   
+  width: 650px;
+  height: 770px;
+  margin: 0 auto;
+  z-index: 1;
 }
 
 .arbol img {
-  position: relative;
-  top: 170px;
-  height: 630px;
-  width: 550px;
-  margin: auto;
+  margin-top: 250px;
   display: block;
-  right: calc(-50% + 50%);
-
+  width: 100%;
+  height: auto;
 }
 
+
+
+
+
+
+.interacciones {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+  z-index: 1000;
+}
 .interacciones button p {
   font-size: 10px;
   font-family: Arial, sans-serif;
@@ -225,13 +254,7 @@ main::after {
   transform: translateX(0);
 }
 
-.oculto {
-  display: none;
-}
 
-.visible {
-  display: block;
-}
 
 
 /* Estilo general del scrollbar */
@@ -288,7 +311,7 @@ main::after {
   
   0% {
 		transform: translate(-50%, -150%);
-		opacity: 0;
+		
 	}
   
   100% {
@@ -315,7 +338,7 @@ main::after {
   background-color: rgba(0, 0, 0, 0.5); 
 }
 
-.contenido-modal {
+.contenido-mensaje {
   background-color: #fefefe;
   margin: 15% auto; 
   padding: 20px;
@@ -326,13 +349,13 @@ main::after {
   border-radius: 10px;
 }
 
-.contenido-modal h2 {
+.contenido-mensaje h2 {
   top: 50%;
   text-align: center;
   align-items: center;
   justify-content: center;
-  color: #fd3232;
-  font-family: 'FuenteNavidad';
+  color: #000000;
+ 
   font-size: 49px;
   text-shadow:
     -2px -2px 0 #ffffff,
@@ -357,5 +380,15 @@ main::after {
   cursor: pointer;
 }
 
-/* Estilo general del widget */
+/* Contador de tiempo */
+.countdown-timer {
+  position: absolute !important;  
+  top: -10px !important;        
+  right: -60px !important;     
+  z-index: 9999 !important;    
+  width: 400px !important;     
+  height: 120px !important;    
+  transform: scale(0.8) !important; 
+  pointer-events: none !important;
+}
 
